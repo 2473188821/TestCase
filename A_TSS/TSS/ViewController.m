@@ -7,71 +7,98 @@
 //
 
 #import "ViewController.h"
-#import "KMacro.h"
-#import "Person.h"
-#import "HHView.h"
+#import "HViewViewController.h"
+#import "HVideoCaptureViewController.h"
 
-@interface ViewController ()
-@property(nonatomic,strong)HHView *hView;
 
-@property(nonatomic,strong)UIPanGestureRecognizer *panges;
+typedef NS_ENUM(NSInteger ,VCType) {
+    VCType_ViewTest,        //view test
+    VCType_VideoCapture,    //音视频捕捉
+};
 
+@interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
+
+@property(nonatomic,strong)UITableView *tableView;
+@property(nonatomic,strong)NSArray *datasource;
 
 @end
 
 @implementation ViewController
 
-- (HHView *)hView {
-    if (!_hView) {
-        _hView = [[HHView alloc]initWithFrame:CGRectMake(100, 100, 100, 100)];
-    }
-    return _hView;
+- (NSArray *)datasource {
+    NSArray *data = @[
+        @"View Test" ,
+        @"Video Capture",
+    ];
+    return data;
 }
-
-- (void)onHHViewPan:(UIPanGestureRecognizer *)rec {
-    
-    CGPoint touchPoint = [rec locationInView:self.view];
-    if (touchPoint.x < 20) {
-        rec.view.center = CGPointMake(20, rec.view.center.y);
-    } else if (touchPoint.x > 600 - 20) {
-        rec.view.center = CGPointMake(600 - 20, rec.view.center.y);
-    } else {
-        rec.view.center = CGPointMake(touchPoint.x, touchPoint.y);
-    }
-    
-    [self.hView printInfo]; 
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = UIColor.lightGrayColor;
-    
-    self.panges = [[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(onHHViewPan:)];
-    [self.hView addGestureRecognizer:self.panges];
-    
-    [self.view addSubview:self.hView];
-    
-    [self hViewTest];
+    [self.view addSubview:self.tableView];
     // Do any additional setup after loading the view.
 }
 
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
 
+#pragma mark --
+#pragma mark -- tableView
+- (UITableView *)tableView
+{
+    if (!_tableView)
+    {
+        CGRect fm = CGRectMake(0, 0, KSCREEN_WIDTH, KSCREEN_HEIGTH);
+        _tableView = [[UITableView alloc]initWithFrame:fm style:UITableViewStylePlain];
+        _tableView.delegate = self;
+        _tableView.dataSource = self;
+    }
+    return _tableView;
 }
 
-- (void)hViewTest {
-    [self.hView printInfo];
-    
-    //    [self.hView makeScaleViewTest];
-    [self.hView makeScaleLayerTest];
-    
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [self.hView makeRotateLayerTest];
-    });
-    
-    [self.hView printInfo];
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return [self.datasource count];
 }
 
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *identify = @"cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identify];
+    if (!cell)
+    {
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identify];
+    }
+    NSString *text = self.datasource[indexPath.row];
+    
+    NSString *textString = [NSString stringWithFormat:@"%ld、 %@",(long)indexPath.row,text];
+    cell.textLabel.text = textString;
+    return cell;
+}
+
+-  (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    HHBaseViewController *vcController = nil;
+    switch (indexPath.row) {
+        case VCType_ViewTest:
+            vcController = [HViewViewController new];
+            break;
+        case VCType_VideoCapture:
+            vcController = [HVideoCaptureViewController new];
+            break;
+            
+        default:
+            break;
+    }
+    
+    [self presentViewController:vcController animated:YES completion:^{
+        
+    }];
+
+//    [self.navigationController pushViewController:vcController animated:NO];
+    
+}
 
 
 @end

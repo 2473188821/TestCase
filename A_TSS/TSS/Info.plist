@@ -21,6 +21,10 @@
 	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
+	<key>NSCameraUsageDescription</key>
+	<string>&quot;camera wii used!&quot;</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>&quot;Mic will used!&quot;</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>

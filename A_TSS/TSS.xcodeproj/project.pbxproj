@@ -19,6 +19,14 @@
 		149E6BBF2533ECA500350129 /* HHTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 149E6BBE2533ECA500350129 /* HHTool.m */; };
 		149E6BC22533ECEF00350129 /* HHView.m in Sources */ = {isa = PBXBuildFile; fileRef = 149E6BC12533ECEF00350129 /* HHView.m */; };
 		149E6BCB2533EFFD00350129 /* RankObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 149E6BCA2533EFFD00350129 /* RankObj.m */; };
+		14D90949256BA308008E6490 /* mayun.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 14D90946256BA307008E6490 /* mayun.mp4 */; };
+		14D9094A256BA308008E6490 /* airplay.png in Resources */ = {isa = PBXBuildFile; fileRef = 14D90947256BA307008E6490 /* airplay.png */; };
+		14D9094B256BA308008E6490 /* chrome.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 14D90948256BA307008E6490 /* chrome.mp4 */; };
+		14D90952256BA346008E6490 /* HSLiveSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D9094F256BA346008E6490 /* HSLiveSession.m */; };
+		14D90953256BA346008E6490 /* HSLiveTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D90951256BA346008E6490 /* HSLiveTool.m */; };
+		14D90958256BA43A008E6490 /* HHBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D90957256BA43A008E6490 /* HHBaseViewController.m */; };
+		14D9095C256BA490008E6490 /* HVideoCaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D9095B256BA490008E6490 /* HVideoCaptureViewController.m */; };
+		14D90960256BA55A008E6490 /* HViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D9095F256BA55A008E6490 /* HViewViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +52,19 @@
 		149E6BC92533EFFD00350129 /* RankObj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RankObj.h; sourceTree = "<group>"; };
 		149E6BCA2533EFFD00350129 /* RankObj.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RankObj.m; sourceTree = "<group>"; };
 		149E6BCC2533F4BD00350129 /* KMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KMacro.h; sourceTree = "<group>"; };
+		14D90946256BA307008E6490 /* mayun.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = mayun.mp4; sourceTree = "<group>"; };
+		14D90947256BA307008E6490 /* airplay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = airplay.png; sourceTree = "<group>"; };
+		14D90948256BA307008E6490 /* chrome.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = chrome.mp4; sourceTree = "<group>"; };
+		14D9094E256BA346008E6490 /* HSLiveTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSLiveTool.h; sourceTree = "<group>"; };
+		14D9094F256BA346008E6490 /* HSLiveSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSLiveSession.m; sourceTree = "<group>"; };
+		14D90950256BA346008E6490 /* HSLiveSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSLiveSession.h; sourceTree = "<group>"; };
+		14D90951256BA346008E6490 /* HSLiveTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSLiveTool.m; sourceTree = "<group>"; };
+		14D90956256BA43A008E6490 /* HHBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHBaseViewController.h; sourceTree = "<group>"; };
+		14D90957256BA43A008E6490 /* HHBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHBaseViewController.m; sourceTree = "<group>"; };
+		14D9095A256BA490008E6490 /* HVideoCaptureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HVideoCaptureViewController.h; sourceTree = "<group>"; };
+		14D9095B256BA490008E6490 /* HVideoCaptureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HVideoCaptureViewController.m; sourceTree = "<group>"; };
+		14D9095E256BA55A008E6490 /* HViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HViewViewController.h; sourceTree = "<group>"; };
+		14D9095F256BA55A008E6490 /* HViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HViewViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +97,9 @@
 		147E66D024F3C0C4002AEB33 /* TSS */ = {
 			isa = PBXGroup;
 			children = (
+				14D90954256BA3F5008E6490 /* Controllers */,
+				14D9094C256BA31F008E6490 /* VideoMedia */,
+				14D90945256BA2E2008E6490 /* Source */,
 				149E6BC32533ED8F00350129 /* HHFunction */,
 				149E6BB62533EBC200350129 /* HHModule */,
 				147E66D124F3C0C4002AEB33 /* AppDelegate.h */,
@@ -149,6 +173,72 @@
 			path = Source;
 			sourceTree = "<group>";
 		};
+		14D90945256BA2E2008E6490 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				14D90947256BA307008E6490 /* airplay.png */,
+				14D90948256BA307008E6490 /* chrome.mp4 */,
+				14D90946256BA307008E6490 /* mayun.mp4 */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		14D9094C256BA31F008E6490 /* VideoMedia */ = {
+			isa = PBXGroup;
+			children = (
+				14D9094D256BA346008E6490 /* ModuleCapture */,
+			);
+			path = VideoMedia;
+			sourceTree = "<group>";
+		};
+		14D9094D256BA346008E6490 /* ModuleCapture */ = {
+			isa = PBXGroup;
+			children = (
+				14D9094E256BA346008E6490 /* HSLiveTool.h */,
+				14D9094F256BA346008E6490 /* HSLiveSession.m */,
+				14D90950256BA346008E6490 /* HSLiveSession.h */,
+				14D90951256BA346008E6490 /* HSLiveTool.m */,
+			);
+			path = ModuleCapture;
+			sourceTree = "<group>";
+		};
+		14D90954256BA3F5008E6490 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				14D9095D256BA544008E6490 /* 1_viewTransform */,
+				14D90959256BA442008E6490 /* 2_VideoCapture */,
+				14D90955256BA411008E6490 /* A_BaseController */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		14D90955256BA411008E6490 /* A_BaseController */ = {
+			isa = PBXGroup;
+			children = (
+				14D90956256BA43A008E6490 /* HHBaseViewController.h */,
+				14D90957256BA43A008E6490 /* HHBaseViewController.m */,
+			);
+			path = A_BaseController;
+			sourceTree = "<group>";
+		};
+		14D90959256BA442008E6490 /* 2_VideoCapture */ = {
+			isa = PBXGroup;
+			children = (
+				14D9095A256BA490008E6490 /* HVideoCaptureViewController.h */,
+				14D9095B256BA490008E6490 /* HVideoCaptureViewController.m */,
+			);
+			path = 2_VideoCapture;
+			sourceTree = "<group>";
+		};
+		14D9095D256BA544008E6490 /* 1_viewTransform */ = {
+			isa = PBXGroup;
+			children = (
+				14D9095E256BA55A008E6490 /* HViewViewController.h */,
+				14D9095F256BA55A008E6490 /* HViewViewController.m */,
+			);
+			path = 1_viewTransform;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -206,8 +296,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14D9094A256BA308008E6490 /* airplay.png in Resources */,
 				147E66E124F3C0C8002AEB33 /* LaunchScreen.storyboard in Resources */,
 				147E66DE24F3C0C8002AEB33 /* Assets.xcassets in Resources */,
+				14D90949256BA308008E6490 /* mayun.mp4 in Resources */,
+				14D9094B256BA308008E6490 /* chrome.mp4 in Resources */,
 				147E66DC24F3C0C4002AEB33 /* Main.storyboard in Resources */,
 				1465EC372500FE6E00B0F96A /* png.png in Resources */,
 			);
@@ -222,10 +315,15 @@
 			files = (
 				149E6BBF2533ECA500350129 /* HHTool.m in Sources */,
 				147E66D924F3C0C4002AEB33 /* ViewController.m in Sources */,
+				14D90960256BA55A008E6490 /* HViewViewController.m in Sources */,
+				14D9095C256BA490008E6490 /* HVideoCaptureViewController.m in Sources */,
 				147E66D324F3C0C4002AEB33 /* AppDelegate.m in Sources */,
+				14D90958256BA43A008E6490 /* HHBaseViewController.m in Sources */,
 				1482C22E24FF8FD000C973E3 /* Person.m in Sources */,
 				147E66E424F3C0C8002AEB33 /* main.m in Sources */,
 				149E6BCB2533EFFD00350129 /* RankObj.m in Sources */,
+				14D90953256BA346008E6490 /* HSLiveTool.m in Sources */,
+				14D90952256BA346008E6490 /* HSLiveSession.m in Sources */,
 				149E6BC22533ECEF00350129 /* HHView.m in Sources */,
 				149E6BBC2533EC8800350129 /* HHObject.m in Sources */,
 			);
