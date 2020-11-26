@@ -15,6 +15,10 @@
 #define KSCREEN_WIDTH   ([UIScreen mainScreen].bounds.size.width)
 #define KSCREEN_HEIGTH  ([UIScreen mainScreen].bounds.size.height)
 
+//弧度转角度
+#define Radians_To_Degrees(radians) ((radians) * (180.0 / M_PI))
+//角度转弧度
+#define Degrees_To_Radians(angle) ((angle) / 180.0 * M_PI)
 
 /** RGB */
 #define ssRGB(r, g, b) \

@@ -9,11 +9,19 @@
 #import "ViewController.h"
 #import "HViewViewController.h"
 #import "HVideoCaptureViewController.h"
+#import "HSortViewController.h"
+#import "HFileViewController.h"
+#import "HCPPViewController.h"
+#import "HCodeFuncViewController.h"
 
 
 typedef NS_ENUM(NSInteger ,VCType) {
     VCType_ViewTest,        //view test
     VCType_VideoCapture,    //音视频捕捉
+    VCType_SortAlgor,       //排序算法
+    VCType_FileHandle,      //文件句柄的使用
+    VCType_OCWithCpp,       //OC、CPP混编
+    VCType_CodeFuncTest,    //链式、函数编程测试
 };
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -29,6 +37,10 @@ typedef NS_ENUM(NSInteger ,VCType) {
     NSArray *data = @[
         @"View Test" ,
         @"Video Capture",
+        @"Sort Algor",
+        @"File Handler",
+        @"OC with CPP",
+        @"Code Function Test",
     ];
     return data;
 }
@@ -41,10 +53,8 @@ typedef NS_ENUM(NSInteger ,VCType) {
 
 #pragma mark --
 #pragma mark -- tableView
-- (UITableView *)tableView
-{
-    if (!_tableView)
-    {
+- (UITableView *)tableView {
+    if (!_tableView) {
         CGRect fm = CGRectMake(0, 0, KSCREEN_WIDTH, KSCREEN_HEIGTH);
         _tableView = [[UITableView alloc]initWithFrame:fm style:UITableViewStylePlain];
         _tableView.delegate = self;
@@ -87,6 +97,18 @@ typedef NS_ENUM(NSInteger ,VCType) {
         case VCType_VideoCapture:
             vcController = [HVideoCaptureViewController new];
             break;
+        case VCType_SortAlgor:
+            vcController = [HSortViewController new];
+            break;
+        case VCType_FileHandle:
+            vcController = [HFileViewController new];
+            break;
+        case VCType_OCWithCpp:
+            vcController = [HCPPViewController new];
+            break;
+        case VCType_CodeFuncTest:
+            vcController = [HCodeFuncViewController new];
+            break;
             
         default:
             break;
@@ -95,9 +117,6 @@ typedef NS_ENUM(NSInteger ,VCType) {
     [self presentViewController:vcController animated:YES completion:^{
         
     }];
-
-//    [self.navigationController pushViewController:vcController animated:NO];
-    
 }
 
 

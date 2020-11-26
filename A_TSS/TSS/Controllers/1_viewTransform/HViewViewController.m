@@ -7,18 +7,29 @@
 //
 
 #import "HViewViewController.h"
-#import "KMacro.h"
-#import "Person.h"
+#import "AppDelegate.h"
+
 #import "HHView.h"
+#import "DragView.h"
 
 @interface HViewViewController ()
 @property(nonatomic,strong)HHView *hView;
-
 @property(nonatomic,strong)UIPanGestureRecognizer *panges;
+
+@property(nonatomic,strong)DragView *dragV;
 
 @end
 
 @implementation HViewViewController
+
+- (DragView *)dragV {
+    if (!_dragV) {
+        _dragV = [[DragView alloc]initWithFrame:CGRectMake(0, 0, 100, 100)];
+        _dragV.layer.cornerRadius = 5.0;
+        _dragV.backgroundColor = [UIColor purpleColor];
+    }
+    return _dragV;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -30,13 +41,15 @@
     
     [self.view addSubview:self.hView];
     
-    [self hViewTest];
+
     // Do any additional setup after loading the view.
 }
 
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-
+    NSLog(@"FFFF--001--:%@",NSStringFromCGRect(self.hView.frame));
+    self.hView.transform = CGAffineTransformMakeScale(3.0, 3.0);
+    NSLog(@"FFFF--002--:%@",NSStringFromCGRect(self.hView.frame));
 }
 
 - (void)hViewTest {
@@ -85,5 +98,31 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+
+bool gl_land = YES;
+- (void)buttonClick
+{
+    NSLog(@"buttonClick");
+    AppDelegate *app = (AppDelegate *)[[UIApplication sharedApplication]delegate];
+    BOOL land = !app.shouldNeedLandscape;
+    app.shouldNeedLandscape = land;
+    
+    if(land)
+    {
+        NSLog(@"buttonClick-------land--");
+        NSNumber *orientationTarget = [NSNumber numberWithInt:UIInterfaceOrientationLandscapeRight];
+        [[UIDevice currentDevice] setValue:orientationTarget forKey:@"orientation"];
+    }
+    else
+    {
+        NSLog(@"buttonClick-------portrait--");
+        NSNumber *orientationTarget = [NSNumber numberWithInt:UIDeviceOrientationPortrait];
+        [[UIDevice currentDevice] setValue:orientationTarget forKey:@"orientation"];
+    }
+    [[NSNotificationCenter defaultCenter] postNotificationName:UIDeviceOrientationDidChangeNotification object:nil];
+}
+
+
 
 @end

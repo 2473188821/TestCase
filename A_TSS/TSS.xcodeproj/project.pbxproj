@@ -15,10 +15,10 @@
 		147E66E124F3C0C8002AEB33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 147E66DF24F3C0C8002AEB33 /* LaunchScreen.storyboard */; };
 		147E66E424F3C0C8002AEB33 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 147E66E324F3C0C8002AEB33 /* main.m */; };
 		1482C22E24FF8FD000C973E3 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 1482C22D24FF8FD000C973E3 /* Person.m */; };
-		149E6BBC2533EC8800350129 /* HHObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 149E6BBB2533EC8800350129 /* HHObject.m */; };
 		149E6BBF2533ECA500350129 /* HHTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 149E6BBE2533ECA500350129 /* HHTool.m */; };
 		149E6BC22533ECEF00350129 /* HHView.m in Sources */ = {isa = PBXBuildFile; fileRef = 149E6BC12533ECEF00350129 /* HHView.m */; };
 		149E6BCB2533EFFD00350129 /* RankObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 149E6BCA2533EFFD00350129 /* RankObj.m */; };
+		14B090C7256E042800023E43 /* HCodeFuncViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B090C6256E042800023E43 /* HCodeFuncViewController.m */; };
 		14D90949256BA308008E6490 /* mayun.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 14D90946256BA307008E6490 /* mayun.mp4 */; };
 		14D9094A256BA308008E6490 /* airplay.png in Resources */ = {isa = PBXBuildFile; fileRef = 14D90947256BA307008E6490 /* airplay.png */; };
 		14D9094B256BA308008E6490 /* chrome.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 14D90948256BA307008E6490 /* chrome.mp4 */; };
@@ -27,6 +27,14 @@
 		14D90958256BA43A008E6490 /* HHBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D90957256BA43A008E6490 /* HHBaseViewController.m */; };
 		14D9095C256BA490008E6490 /* HVideoCaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D9095B256BA490008E6490 /* HVideoCaptureViewController.m */; };
 		14D90960256BA55A008E6490 /* HViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D9095F256BA55A008E6490 /* HViewViewController.m */; };
+		14D90963256BB0F9008E6490 /* DragView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D90961256BB0F9008E6490 /* DragView.m */; };
+		14D90967256BB17C008E6490 /* HSortViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D90966256BB17C008E6490 /* HSortViewController.m */; };
+		14D9096B256BBC60008E6490 /* HFileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D9096A256BBC60008E6490 /* HFileViewController.m */; };
+		14D9096E256BBDC3008E6490 /* FileObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D9096D256BBDC3008E6490 /* FileObject.m */; };
+		14D90972256BC0BF008E6490 /* HCPPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D90971256BC0BF008E6490 /* HCPPViewController.m */; };
+		14D9097A256BC10A008E6490 /* CClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D90974256BC10A008E6490 /* CClient.cpp */; };
+		14D9097B256BC10A008E6490 /* test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D90975256BC10A008E6490 /* test.cpp */; };
+		14D9097C256BC10A008E6490 /* CAgent.mm in Sources */ = {isa = PBXBuildFile; fileRef = 14D90977256BC10A008E6490 /* CAgent.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,8 +51,6 @@
 		147E66E324F3C0C8002AEB33 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1482C22C24FF8FD000C973E3 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		1482C22D24FF8FD000C973E3 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
-		149E6BBA2533EC8800350129 /* HHObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHObject.h; sourceTree = "<group>"; };
-		149E6BBB2533EC8800350129 /* HHObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHObject.m; sourceTree = "<group>"; };
 		149E6BBD2533ECA500350129 /* HHTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHTool.h; sourceTree = "<group>"; };
 		149E6BBE2533ECA500350129 /* HHTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHTool.m; sourceTree = "<group>"; };
 		149E6BC02533ECEF00350129 /* HHView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHView.h; sourceTree = "<group>"; };
@@ -52,6 +58,8 @@
 		149E6BC92533EFFD00350129 /* RankObj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RankObj.h; sourceTree = "<group>"; };
 		149E6BCA2533EFFD00350129 /* RankObj.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RankObj.m; sourceTree = "<group>"; };
 		149E6BCC2533F4BD00350129 /* KMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KMacro.h; sourceTree = "<group>"; };
+		14B090C5256E042800023E43 /* HCodeFuncViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCodeFuncViewController.h; sourceTree = "<group>"; };
+		14B090C6256E042800023E43 /* HCodeFuncViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCodeFuncViewController.m; sourceTree = "<group>"; };
 		14D90946256BA307008E6490 /* mayun.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = mayun.mp4; sourceTree = "<group>"; };
 		14D90947256BA307008E6490 /* airplay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = airplay.png; sourceTree = "<group>"; };
 		14D90948256BA307008E6490 /* chrome.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = chrome.mp4; sourceTree = "<group>"; };
@@ -65,6 +73,22 @@
 		14D9095B256BA490008E6490 /* HVideoCaptureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HVideoCaptureViewController.m; sourceTree = "<group>"; };
 		14D9095E256BA55A008E6490 /* HViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HViewViewController.h; sourceTree = "<group>"; };
 		14D9095F256BA55A008E6490 /* HViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HViewViewController.m; sourceTree = "<group>"; };
+		14D90961256BB0F9008E6490 /* DragView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragView.m; sourceTree = "<group>"; };
+		14D90962256BB0F9008E6490 /* DragView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragView.h; sourceTree = "<group>"; };
+		14D90965256BB17C008E6490 /* HSortViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HSortViewController.h; sourceTree = "<group>"; };
+		14D90966256BB17C008E6490 /* HSortViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HSortViewController.m; sourceTree = "<group>"; };
+		14D90969256BBC60008E6490 /* HFileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HFileViewController.h; sourceTree = "<group>"; };
+		14D9096A256BBC60008E6490 /* HFileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HFileViewController.m; sourceTree = "<group>"; };
+		14D9096C256BBDC3008E6490 /* FileObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileObject.h; sourceTree = "<group>"; };
+		14D9096D256BBDC3008E6490 /* FileObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileObject.m; sourceTree = "<group>"; };
+		14D90970256BC0BF008E6490 /* HCPPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCPPViewController.h; sourceTree = "<group>"; };
+		14D90971256BC0BF008E6490 /* HCPPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCPPViewController.m; sourceTree = "<group>"; };
+		14D90974256BC10A008E6490 /* CClient.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CClient.cpp; sourceTree = "<group>"; };
+		14D90975256BC10A008E6490 /* test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test.cpp; sourceTree = "<group>"; };
+		14D90976256BC10A008E6490 /* test.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = test.hpp; sourceTree = "<group>"; };
+		14D90977256BC10A008E6490 /* CAgent.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CAgent.mm; sourceTree = "<group>"; };
+		14D90978256BC10A008E6490 /* CClient.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CClient.hpp; sourceTree = "<group>"; };
+		14D90979256BC10A008E6490 /* CAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAgent.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,10 +122,8 @@
 			isa = PBXGroup;
 			children = (
 				14D90954256BA3F5008E6490 /* Controllers */,
-				14D9094C256BA31F008E6490 /* VideoMedia */,
 				14D90945256BA2E2008E6490 /* Source */,
 				149E6BC32533ED8F00350129 /* HHFunction */,
-				149E6BB62533EBC200350129 /* HHModule */,
 				147E66D124F3C0C4002AEB33 /* AppDelegate.h */,
 				147E66D224F3C0C4002AEB33 /* AppDelegate.m */,
 				147E66D724F3C0C4002AEB33 /* ViewController.h */,
@@ -115,80 +137,47 @@
 			path = TSS;
 			sourceTree = "<group>";
 		};
-		149E6BB62533EBC200350129 /* HHModule */ = {
-			isa = PBXGroup;
-			children = (
-				149E6BC42533EDB000350129 /* Source */,
-				149E6BB92533EBDC00350129 /* Tool */,
-				149E6BB82533EBD300350129 /* Module */,
-				149E6BB72533EBCC00350129 /* UIView */,
-			);
-			path = HHModule;
-			sourceTree = "<group>";
-		};
 		149E6BB72533EBCC00350129 /* UIView */ = {
 			isa = PBXGroup;
 			children = (
+				14D90962256BB0F9008E6490 /* DragView.h */,
+				14D90961256BB0F9008E6490 /* DragView.m */,
 				149E6BC02533ECEF00350129 /* HHView.h */,
 				149E6BC12533ECEF00350129 /* HHView.m */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
 		};
-		149E6BB82533EBD300350129 /* Module */ = {
-			isa = PBXGroup;
-			children = (
-				149E6BBA2533EC8800350129 /* HHObject.h */,
-				149E6BBB2533EC8800350129 /* HHObject.m */,
-			);
-			path = Module;
-			sourceTree = "<group>";
-		};
-		149E6BB92533EBDC00350129 /* Tool */ = {
+		149E6BC32533ED8F00350129 /* HHFunction */ = {
 			isa = PBXGroup;
 			children = (
 				149E6BBD2533ECA500350129 /* HHTool.h */,
 				149E6BBE2533ECA500350129 /* HHTool.m */,
 			);
-			path = Tool;
+			path = HHFunction;
 			sourceTree = "<group>";
 		};
-		149E6BC32533ED8F00350129 /* HHFunction */ = {
+		14B090C4256E040D00023E43 /* 6_codeFunction */ = {
 			isa = PBXGroup;
 			children = (
 				1482C22C24FF8FD000C973E3 /* Person.h */,
 				1482C22D24FF8FD000C973E3 /* Person.m */,
-				149E6BC92533EFFD00350129 /* RankObj.h */,
-				149E6BCA2533EFFD00350129 /* RankObj.m */,
+				14B090C5256E042800023E43 /* HCodeFuncViewController.h */,
+				14B090C6256E042800023E43 /* HCodeFuncViewController.m */,
 			);
-			path = HHFunction;
-			sourceTree = "<group>";
-		};
-		149E6BC42533EDB000350129 /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				1465EC362500FE6E00B0F96A /* png.png */,
-				149E6BCC2533F4BD00350129 /* KMacro.h */,
-			);
-			path = Source;
+			path = 6_codeFunction;
 			sourceTree = "<group>";
 		};
 		14D90945256BA2E2008E6490 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				1465EC362500FE6E00B0F96A /* png.png */,
+				149E6BCC2533F4BD00350129 /* KMacro.h */,
 				14D90947256BA307008E6490 /* airplay.png */,
 				14D90948256BA307008E6490 /* chrome.mp4 */,
 				14D90946256BA307008E6490 /* mayun.mp4 */,
 			);
 			path = Source;
-			sourceTree = "<group>";
-		};
-		14D9094C256BA31F008E6490 /* VideoMedia */ = {
-			isa = PBXGroup;
-			children = (
-				14D9094D256BA346008E6490 /* ModuleCapture */,
-			);
-			path = VideoMedia;
 			sourceTree = "<group>";
 		};
 		14D9094D256BA346008E6490 /* ModuleCapture */ = {
@@ -205,6 +194,10 @@
 		14D90954256BA3F5008E6490 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				14B090C4256E040D00023E43 /* 6_codeFunction */,
+				14D9096F256BC0A3008E6490 /* 5_OC_Cpp */,
+				14D90968256BBC49008E6490 /* 4_fileHandle */,
+				14D90964256BB14F008E6490 /* 3_SortAlga */,
 				14D9095D256BA544008E6490 /* 1_viewTransform */,
 				14D90959256BA442008E6490 /* 2_VideoCapture */,
 				14D90955256BA411008E6490 /* A_BaseController */,
@@ -224,6 +217,7 @@
 		14D90959256BA442008E6490 /* 2_VideoCapture */ = {
 			isa = PBXGroup;
 			children = (
+				14D9094D256BA346008E6490 /* ModuleCapture */,
 				14D9095A256BA490008E6490 /* HVideoCaptureViewController.h */,
 				14D9095B256BA490008E6490 /* HVideoCaptureViewController.m */,
 			);
@@ -233,10 +227,56 @@
 		14D9095D256BA544008E6490 /* 1_viewTransform */ = {
 			isa = PBXGroup;
 			children = (
+				149E6BB72533EBCC00350129 /* UIView */,
 				14D9095E256BA55A008E6490 /* HViewViewController.h */,
 				14D9095F256BA55A008E6490 /* HViewViewController.m */,
 			);
 			path = 1_viewTransform;
+			sourceTree = "<group>";
+		};
+		14D90964256BB14F008E6490 /* 3_SortAlga */ = {
+			isa = PBXGroup;
+			children = (
+				149E6BC92533EFFD00350129 /* RankObj.h */,
+				149E6BCA2533EFFD00350129 /* RankObj.m */,
+				14D90965256BB17C008E6490 /* HSortViewController.h */,
+				14D90966256BB17C008E6490 /* HSortViewController.m */,
+			);
+			path = 3_SortAlga;
+			sourceTree = "<group>";
+		};
+		14D90968256BBC49008E6490 /* 4_fileHandle */ = {
+			isa = PBXGroup;
+			children = (
+				14D9096C256BBDC3008E6490 /* FileObject.h */,
+				14D9096D256BBDC3008E6490 /* FileObject.m */,
+				14D90969256BBC60008E6490 /* HFileViewController.h */,
+				14D9096A256BBC60008E6490 /* HFileViewController.m */,
+			);
+			path = 4_fileHandle;
+			sourceTree = "<group>";
+		};
+		14D9096F256BC0A3008E6490 /* 5_OC_Cpp */ = {
+			isa = PBXGroup;
+			children = (
+				14D90973256BC0C7008E6490 /* CPPFile */,
+				14D90970256BC0BF008E6490 /* HCPPViewController.h */,
+				14D90971256BC0BF008E6490 /* HCPPViewController.m */,
+			);
+			path = 5_OC_Cpp;
+			sourceTree = "<group>";
+		};
+		14D90973256BC0C7008E6490 /* CPPFile */ = {
+			isa = PBXGroup;
+			children = (
+				14D90979256BC10A008E6490 /* CAgent.h */,
+				14D90977256BC10A008E6490 /* CAgent.mm */,
+				14D90974256BC10A008E6490 /* CClient.cpp */,
+				14D90978256BC10A008E6490 /* CClient.hpp */,
+				14D90975256BC10A008E6490 /* test.cpp */,
+				14D90976256BC10A008E6490 /* test.hpp */,
+			);
+			path = CPPFile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,19 +353,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14B090C7256E042800023E43 /* HCodeFuncViewController.m in Sources */,
 				149E6BBF2533ECA500350129 /* HHTool.m in Sources */,
 				147E66D924F3C0C4002AEB33 /* ViewController.m in Sources */,
 				14D90960256BA55A008E6490 /* HViewViewController.m in Sources */,
+				14D9096E256BBDC3008E6490 /* FileObject.m in Sources */,
 				14D9095C256BA490008E6490 /* HVideoCaptureViewController.m in Sources */,
 				147E66D324F3C0C4002AEB33 /* AppDelegate.m in Sources */,
 				14D90958256BA43A008E6490 /* HHBaseViewController.m in Sources */,
+				14D90967256BB17C008E6490 /* HSortViewController.m in Sources */,
+				14D9096B256BBC60008E6490 /* HFileViewController.m in Sources */,
+				14D9097C256BC10A008E6490 /* CAgent.mm in Sources */,
 				1482C22E24FF8FD000C973E3 /* Person.m in Sources */,
+				14D9097A256BC10A008E6490 /* CClient.cpp in Sources */,
 				147E66E424F3C0C8002AEB33 /* main.m in Sources */,
 				149E6BCB2533EFFD00350129 /* RankObj.m in Sources */,
+				14D9097B256BC10A008E6490 /* test.cpp in Sources */,
 				14D90953256BA346008E6490 /* HSLiveTool.m in Sources */,
+				14D90963256BB0F9008E6490 /* DragView.m in Sources */,
 				14D90952256BA346008E6490 /* HSLiveSession.m in Sources */,
+				14D90972256BC0BF008E6490 /* HCPPViewController.m in Sources */,
 				149E6BC22533ECEF00350129 /* HHView.m in Sources */,
-				149E6BBC2533EC8800350129 /* HHObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

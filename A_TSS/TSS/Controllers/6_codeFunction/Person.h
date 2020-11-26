@@ -21,13 +21,33 @@ typedef NS_OPTIONS(NSInteger, PFoodType) {
 
 @interface Person : NSObject
 
+//位运算
 @property(nonatomic,assign)PFoodType food;
+- (void)showFood;
 
 - (void)lock;
 
-- (void)showFood;
+//函数编程
+- (void)setName:(NSString *)name;
 
-- (NSString *)hexStringFromColor:(UIColor *)color xxalpha:(CGFloat)alpha;
+#pragma mark -- localfunction
+- (Person *)eat;
+- (Person *)drink;
+
+#pragma mark -- block 返回值：void
+- (void(^)(void))smile;
+- (void(^)(void))laugh;
+
+#pragma mark -- block chain 返回值：self对象
+- (Person *(^)(NSString *name))nameCall;
+- (Person *(^)(int age))ageCall;
+
+
+- (Person *(^)(NSString *name))name;
+- (Person *(^)(int age))age;
+
+id createPerson();
+static id createPerson_static();
 
 @end
 
