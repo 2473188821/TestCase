@@ -140,7 +140,8 @@
         if (i != min) {  /*若min不等于i，说明找到最小值，交换*/
             [arr exchangeObjectAtIndex:i withObjectAtIndex:min];
         }
-    }    NSLog(@"final----:%@",arr);
+    }
+    NSLog(@"final----:%@",arr);
 }
 
 
@@ -194,7 +195,7 @@
     for (i= list.count/2-1; i>=0; i--) {
         [self createBiggesHeap:list withSize:size beIndex:i];
     }
-    
+     
     while(size > 0){
         [list exchangeObjectAtIndex:size-1 withObjectAtIndex:0]; //将根(最大) 与数组最末交换
         size -- ;//树大小减小
@@ -205,21 +206,33 @@
 
 + (void)createBiggesHeap:(NSMutableArray *)list withSize:(NSInteger) size beIndex:(NSInteger)element
 {
-    NSInteger lchild = element *2 + 1,rchild = lchild+1; //左右子树
-    while (rchild < size) { //子树均在范围内
-        if ([list[element] integerValue] >= [list[lchild] integerValue] && [list[element] integerValue] >= [list[rchild]integerValue]) return; //如果比左右子树都大，完成整理
-        if ([list[lchild] integerValue] > [list[rchild] integerValue]) { //如果左边最大
-            [list exchangeObjectAtIndex:element withObjectAtIndex:lchild]; //把左面的提到上面
+    //左右子树
+    NSInteger lchild = element * 2 + 1;
+    NSInteger rchild = lchild + 1;
+    
+    //子树均在范围内
+    while (rchild < size) {
+        //如果root节点比左右子树都大，完成整理
+        if ([list[element] integerValue] >= [list[lchild] integerValue] &&
+            [list[element] integerValue] >= [list[rchild]integerValue])
+            return;
+        
+        //如果左边最大
+        if ([list[lchild] integerValue] > [list[rchild] integerValue]) {
+            //把左面的提到上面
+            [list exchangeObjectAtIndex:element withObjectAtIndex:lchild];
             element = lchild; //循环时整理子树
-        }else{//否则右面最大
+            
+        } else {//否则右面最大
             [list exchangeObjectAtIndex:element withObjectAtIndex:rchild];
             element = rchild;
         }
         
-        lchild = element * 2 +1;
-        rchild = lchild + 1; //重新计算子树位置
+        //重新计算子树位置
+        lchild = element * 2 + 1;
+        rchild = lchild + 1;
     }
-    //只有左子树且子树大于自己
+    //只有左子树且子树大于自己root节点
     if (lchild < size && [list[lchild] integerValue] > [list[element] integerValue]) {
         [list exchangeObjectAtIndex:lchild withObjectAtIndex:element];
     }
