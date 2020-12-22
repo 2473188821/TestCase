@@ -13,6 +13,17 @@ NS_ASSUME_NONNULL_BEGIN
 #define KSCREEN_WIDTH   ([UIScreen mainScreen].bounds.size.width)
 #define KSCREEN_HEIGTH  ([UIScreen mainScreen].bounds.size.height)
 
+//Null 数据校验
+#define HNULLCheckValue(value)\
+({id tmp;\
+if ([value isKindOfClass:[NSNull class]])\
+    tmp = nil;\
+else\
+    tmp = value;\
+tmp;\
+})\
+
+
 //获取时间数据
 typedef NS_ENUM(NSInteger,CCTimeType) {
     CCTimeTypeYear,
@@ -36,6 +47,8 @@ typedef NS_ENUM(NSInteger,CCDirectoryRootType) {
 
 
 @interface HHBaseViewController : UIViewController
+
+- (void)nullCheck;
 
 - (void)fun_addControllerBackGesture;
 - (void)fun_redirectNSLog;

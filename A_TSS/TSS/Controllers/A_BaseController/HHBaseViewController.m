@@ -8,6 +8,7 @@
 
 #import "HHBaseViewController.h"
 
+
 @interface HHBaseViewController ()
 
 @end
@@ -218,6 +219,21 @@
 }
 
 
+- (void)nullCheck {
+    
+}
+
+- (id)hhNullCheckValue:(id)value key:(NSString *)key {
+    id tmp = value;
+    if ([tmp isKindOfClass:[NSNull class]]) {
+        NSLog(@"null---:%@",key);
+        tmp = nil;
+    } else {
+        tmp = value[key];
+    }
+
+    return tmp;
+}
 
 
 

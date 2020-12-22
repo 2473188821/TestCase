@@ -204,25 +204,27 @@
     NSLog(@"%@",list);
 }
 
-+ (void)createBiggesHeap:(NSMutableArray *)list withSize:(NSInteger) size beIndex:(NSInteger)element
++ (void)createBiggesHeap:(NSMutableArray *)list withSize:(NSInteger) size beIndex:(NSInteger)index
 {
     //左右子树
+    NSInteger element = index;
     NSInteger lchild = element * 2 + 1;
     NSInteger rchild = lchild + 1;
     
     //子树均在范围内
     while (rchild < size) {
+        NSInteger evalue = [list[element]integerValue];
+        NSInteger lvalue = [list[lchild]integerValue];
+        NSInteger rvalue = [list[rchild]integerValue];
+        
         //如果root节点比左右子树都大，完成整理
-        if ([list[element] integerValue] >= [list[lchild] integerValue] &&
-            [list[element] integerValue] >= [list[rchild]integerValue])
-            return;
+        if (evalue >= lvalue && evalue >= rvalue) return;
         
         //如果左边最大
-        if ([list[lchild] integerValue] > [list[rchild] integerValue]) {
+        if (lvalue > rvalue) {
             //把左面的提到上面
             [list exchangeObjectAtIndex:element withObjectAtIndex:lchild];
             element = lchild; //循环时整理子树
-            
         } else {//否则右面最大
             [list exchangeObjectAtIndex:element withObjectAtIndex:rchild];
             element = rchild;
