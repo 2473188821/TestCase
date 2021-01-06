@@ -21,14 +21,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-   
-    /*
-    self.array = [NSMutableArray array];
-    [self.array addObject:@"1"];
-    [self.array removeAllObjects];
-*/
- 
-    
+
     return YES;
 }
 

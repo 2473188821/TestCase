@@ -15,6 +15,7 @@
 #import "HCodeFuncViewController.h"
 #import "HDrawViewController.h"
 #import "HLayerViewController.h"
+#import "HBlockViewController.h"
 
 typedef NS_ENUM(NSInteger ,VCType) {
     VCType_ViewTest,        //view test
@@ -25,6 +26,7 @@ typedef NS_ENUM(NSInteger ,VCType) {
     VCType_CodeFuncTest,    //链式、函数编程测试
     VCType_DrawView,        //view绘制相关
     VCType_LayerTest,       //Layer 测试
+    VCType_Block,           //Block 相关
 };
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -45,7 +47,8 @@ typedef NS_ENUM(NSInteger ,VCType) {
         @"OC with CPP",
         @"Code Function Test",
         @"Draw View About",
-        @"Layer Test"
+        @"Layer Test",
+        @"Block Test",
     ];
     return data;
 }
@@ -119,6 +122,9 @@ typedef NS_ENUM(NSInteger ,VCType) {
             break;
         case VCType_LayerTest:
             vcController = [HLayerViewController new];
+            break;
+        case VCType_Block:
+            vcController = [HBlockViewController new];
             break;
             
         default:

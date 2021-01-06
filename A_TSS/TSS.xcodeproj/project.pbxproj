@@ -43,6 +43,7 @@
 		14D9097A256BC10A008E6490 /* CClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D90974256BC10A008E6490 /* CClient.cpp */; };
 		14D9097B256BC10A008E6490 /* test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D90975256BC10A008E6490 /* test.cpp */; };
 		14D9097C256BC10A008E6490 /* CAgent.mm in Sources */ = {isa = PBXBuildFile; fileRef = 14D90977256BC10A008E6490 /* CAgent.mm */; };
+		14F9887C25A1C9CD00D82BC3 /* HBlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F9887B25A1C9CD00D82BC3 /* HBlockViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -112,6 +113,8 @@
 		14D90977256BC10A008E6490 /* CAgent.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CAgent.mm; sourceTree = "<group>"; };
 		14D90978256BC10A008E6490 /* CClient.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CClient.hpp; sourceTree = "<group>"; };
 		14D90979256BC10A008E6490 /* CAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAgent.h; sourceTree = "<group>"; };
+		14F9887A25A1C9CD00D82BC3 /* HBlockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBlockViewController.h; sourceTree = "<group>"; };
+		14F9887B25A1C9CD00D82BC3 /* HBlockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBlockViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -254,6 +257,7 @@
 		14D90954256BA3F5008E6490 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				14F9887625A1C96F00D82BC3 /* 9_block */,
 				14ADC0952570A555009692E9 /* 8_layerTest */,
 				148FF10D256F534000ED2365 /* 7_drawView */,
 				14B090C4256E040D00023E43 /* 6_codeFunction */,
@@ -339,6 +343,15 @@
 				14D90976256BC10A008E6490 /* test.hpp */,
 			);
 			path = CPPFile;
+			sourceTree = "<group>";
+		};
+		14F9887625A1C96F00D82BC3 /* 9_block */ = {
+			isa = PBXGroup;
+			children = (
+				14F9887A25A1C9CD00D82BC3 /* HBlockViewController.h */,
+				14F9887B25A1C9CD00D82BC3 /* HBlockViewController.m */,
+			);
+			path = 9_block;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -442,6 +455,7 @@
 				14D90963256BB0F9008E6490 /* DragView.m in Sources */,
 				148FF11F256F53BD00ED2365 /* HSDrawView.m in Sources */,
 				14D90952256BA346008E6490 /* HSLiveSession.m in Sources */,
+				14F9887C25A1C9CD00D82BC3 /* HBlockViewController.m in Sources */,
 				14D90972256BC0BF008E6490 /* HCPPViewController.m in Sources */,
 				149E6BC22533ECEF00350129 /* HHView.m in Sources */,
 			);
