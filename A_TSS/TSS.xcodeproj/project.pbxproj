@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1454AAB425A5B4B5001029EB /* HHitTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1454AAB325A5B4B5001029EB /* HHitTestView.m */; };
 		1465EC372500FE6E00B0F96A /* png.png in Resources */ = {isa = PBXBuildFile; fileRef = 1465EC362500FE6E00B0F96A /* png.png */; };
 		147E66D324F3C0C4002AEB33 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 147E66D224F3C0C4002AEB33 /* AppDelegate.m */; };
 		147E66D924F3C0C4002AEB33 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 147E66D824F3C0C4002AEB33 /* ViewController.m */; };
@@ -47,6 +48,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1454AAB225A5B4B5001029EB /* HHitTestView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHitTestView.h; sourceTree = "<group>"; };
+		1454AAB325A5B4B5001029EB /* HHitTestView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHitTestView.m; sourceTree = "<group>"; };
 		1465EC362500FE6E00B0F96A /* png.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = png.png; sourceTree = "<group>"; };
 		147E66CE24F3C0C4002AEB33 /* TSS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TSS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		147E66D124F3C0C4002AEB33 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -197,6 +200,8 @@
 				14D90961256BB0F9008E6490 /* DragView.m */,
 				149E6BC02533ECEF00350129 /* HHView.h */,
 				149E6BC12533ECEF00350129 /* HHView.m */,
+				1454AAB225A5B4B5001029EB /* HHitTestView.h */,
+				1454AAB325A5B4B5001029EB /* HHitTestView.m */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -247,9 +252,9 @@
 			isa = PBXGroup;
 			children = (
 				14D9094E256BA346008E6490 /* HSLiveTool.h */,
-				14D9094F256BA346008E6490 /* HSLiveSession.m */,
-				14D90950256BA346008E6490 /* HSLiveSession.h */,
 				14D90951256BA346008E6490 /* HSLiveTool.m */,
+				14D90950256BA346008E6490 /* HSLiveSession.h */,
+				14D9094F256BA346008E6490 /* HSLiveSession.m */,
 			);
 			path = ModuleCapture;
 			sourceTree = "<group>";
@@ -444,6 +449,7 @@
 				148FF11E256F53BD00ED2365 /* SignatureViewQuartzQuadratic.m in Sources */,
 				148FF121256F53BD00ED2365 /* SignatureViewQuartz.m in Sources */,
 				148FF120256F53BD00ED2365 /* HSDrawViewBezier.m in Sources */,
+				1454AAB425A5B4B5001029EB /* HHitTestView.m in Sources */,
 				14D9096B256BBC60008E6490 /* HFileViewController.m in Sources */,
 				14D9097C256BC10A008E6490 /* CAgent.mm in Sources */,
 				1482C22E24FF8FD000C973E3 /* Person.m in Sources */,
