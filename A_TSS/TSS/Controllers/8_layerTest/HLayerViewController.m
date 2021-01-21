@@ -25,7 +25,7 @@
     [super viewDidLoad];
     [self.view addSubview:self.imageTitle];
     
-    [self createBTN];
+    [self test_CAGradientLayer];
     // Do any additional setup after loading the view.
 }
 
@@ -74,7 +74,7 @@
 - (NSArray *)data {
     return @[@"在线回放 >",@"离线回放 >",@"在线旁听 >"];
 }
-- (void)createBTN {
+- (void)test_CAGradientLayer {
     int y = self.imageTitle.frame.origin.y + self.imageTitle.frame.size.height;
     y += 50;
     int btn_w = 260 ,btn_h = 50;

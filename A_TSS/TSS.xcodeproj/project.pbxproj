@@ -16,18 +16,23 @@
 		147E66E124F3C0C8002AEB33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 147E66DF24F3C0C8002AEB33 /* LaunchScreen.storyboard */; };
 		147E66E424F3C0C8002AEB33 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 147E66E324F3C0C8002AEB33 /* main.m */; };
 		1482C22E24FF8FD000C973E3 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 1482C22D24FF8FD000C973E3 /* Person.m */; };
+		14865F1725B18184007A8ADC /* KKPlayRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 14865F1625B18184007A8ADC /* KKPlayRecord.m */; };
 		148FF110256F535B00ED2365 /* HDrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 148FF10F256F535B00ED2365 /* HDrawViewController.m */; };
 		148FF11D256F53BD00ED2365 /* HSDrawViewMulti.m in Sources */ = {isa = PBXBuildFile; fileRef = 148FF112256F53BD00ED2365 /* HSDrawViewMulti.m */; };
 		148FF11E256F53BD00ED2365 /* SignatureViewQuartzQuadratic.m in Sources */ = {isa = PBXBuildFile; fileRef = 148FF114256F53BD00ED2365 /* SignatureViewQuartzQuadratic.m */; };
 		148FF11F256F53BD00ED2365 /* HSDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 148FF115256F53BD00ED2365 /* HSDrawView.m */; };
 		148FF120256F53BD00ED2365 /* HSDrawViewBezier.m in Sources */ = {isa = PBXBuildFile; fileRef = 148FF119256F53BD00ED2365 /* HSDrawViewBezier.m */; };
 		148FF121256F53BD00ED2365 /* SignatureViewQuartz.m in Sources */ = {isa = PBXBuildFile; fileRef = 148FF11A256F53BD00ED2365 /* SignatureViewQuartz.m */; };
+		149D553225B02A5C000344C0 /* meetyou_30.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 149D553025B02A5C000344C0 /* meetyou_30.mp3 */; };
+		149D557725B044E3000344C0 /* 441_30.pcm in Resources */ = {isa = PBXBuildFile; fileRef = 149D557625B044E3000344C0 /* 441_30.pcm */; };
 		149E6BBF2533ECA500350129 /* HHTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 149E6BBE2533ECA500350129 /* HHTool.m */; };
 		149E6BC22533ECEF00350129 /* HHView.m in Sources */ = {isa = PBXBuildFile; fileRef = 149E6BC12533ECEF00350129 /* HHView.m */; };
 		149E6BCB2533EFFD00350129 /* RankObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 149E6BCA2533EFFD00350129 /* RankObj.m */; };
 		14ADC0942570A54C009692E9 /* red_leaf.png in Resources */ = {isa = PBXBuildFile; fileRef = 14ADC0932570A54C009692E9 /* red_leaf.png */; };
 		14ADC0982570A568009692E9 /* HLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14ADC0972570A568009692E9 /* HLayerViewController.m */; };
 		14B090C7256E042800023E43 /* HCodeFuncViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B090C6256E042800023E43 /* HCodeFuncViewController.m */; };
+		14CE242625ADA79F005C578E /* HAudioUnitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CE242525ADA79F005C578E /* HAudioUnitViewController.m */; };
+		14CE242A25ADAFF5005C578E /* KKPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CE242925ADAFF5005C578E /* KKPlayer.m */; };
 		14D90949256BA308008E6490 /* mayun.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 14D90946256BA307008E6490 /* mayun.mp4 */; };
 		14D9094A256BA308008E6490 /* airplay.png in Resources */ = {isa = PBXBuildFile; fileRef = 14D90947256BA307008E6490 /* airplay.png */; };
 		14D9094B256BA308008E6490 /* chrome.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 14D90948256BA307008E6490 /* chrome.mp4 */; };
@@ -63,6 +68,8 @@
 		147E66E324F3C0C8002AEB33 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1482C22C24FF8FD000C973E3 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		1482C22D24FF8FD000C973E3 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		14865F1525B18184007A8ADC /* KKPlayRecord.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKPlayRecord.h; sourceTree = "<group>"; };
+		14865F1625B18184007A8ADC /* KKPlayRecord.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKPlayRecord.m; sourceTree = "<group>"; };
 		148FF10E256F535B00ED2365 /* HDrawViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDrawViewController.h; sourceTree = "<group>"; };
 		148FF10F256F535B00ED2365 /* HDrawViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDrawViewController.m; sourceTree = "<group>"; };
 		148FF112256F53BD00ED2365 /* HSDrawViewMulti.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSDrawViewMulti.m; sourceTree = "<group>"; };
@@ -75,6 +82,8 @@
 		148FF119256F53BD00ED2365 /* HSDrawViewBezier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSDrawViewBezier.m; sourceTree = "<group>"; };
 		148FF11A256F53BD00ED2365 /* SignatureViewQuartz.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignatureViewQuartz.m; sourceTree = "<group>"; };
 		148FF11B256F53BD00ED2365 /* SignatureViewQuartzQuadratic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignatureViewQuartzQuadratic.h; sourceTree = "<group>"; };
+		149D553025B02A5C000344C0 /* meetyou_30.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = meetyou_30.mp3; sourceTree = "<group>"; };
+		149D557625B044E3000344C0 /* 441_30.pcm */ = {isa = PBXFileReference; lastKnownFileType = file; path = 441_30.pcm; sourceTree = "<group>"; };
 		149E6BBD2533ECA500350129 /* HHTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHTool.h; sourceTree = "<group>"; };
 		149E6BBE2533ECA500350129 /* HHTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHTool.m; sourceTree = "<group>"; };
 		149E6BC02533ECEF00350129 /* HHView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHView.h; sourceTree = "<group>"; };
@@ -87,6 +96,10 @@
 		14ADC0972570A568009692E9 /* HLayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLayerViewController.m; sourceTree = "<group>"; };
 		14B090C5256E042800023E43 /* HCodeFuncViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCodeFuncViewController.h; sourceTree = "<group>"; };
 		14B090C6256E042800023E43 /* HCodeFuncViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCodeFuncViewController.m; sourceTree = "<group>"; };
+		14CE242425ADA79F005C578E /* HAudioUnitViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HAudioUnitViewController.h; sourceTree = "<group>"; };
+		14CE242525ADA79F005C578E /* HAudioUnitViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HAudioUnitViewController.m; sourceTree = "<group>"; };
+		14CE242825ADAFF5005C578E /* KKPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKPlayer.h; sourceTree = "<group>"; };
+		14CE242925ADAFF5005C578E /* KKPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKPlayer.m; sourceTree = "<group>"; };
 		14D90946256BA307008E6490 /* mayun.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = mayun.mp4; sourceTree = "<group>"; };
 		14D90947256BA307008E6490 /* airplay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = airplay.png; sourceTree = "<group>"; };
 		14D90948256BA307008E6490 /* chrome.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = chrome.mp4; sourceTree = "<group>"; };
@@ -235,13 +248,36 @@
 			path = 6_codeFunction;
 			sourceTree = "<group>";
 		};
+		14CE242325ADA76C005C578E /* 10_audioUnit */ = {
+			isa = PBXGroup;
+			children = (
+				14CE242725ADAE9A005C578E /* tool */,
+				14CE242425ADA79F005C578E /* HAudioUnitViewController.h */,
+				14CE242525ADA79F005C578E /* HAudioUnitViewController.m */,
+			);
+			path = 10_audioUnit;
+			sourceTree = "<group>";
+		};
+		14CE242725ADAE9A005C578E /* tool */ = {
+			isa = PBXGroup;
+			children = (
+				14CE242825ADAFF5005C578E /* KKPlayer.h */,
+				14CE242925ADAFF5005C578E /* KKPlayer.m */,
+				14865F1525B18184007A8ADC /* KKPlayRecord.h */,
+				14865F1625B18184007A8ADC /* KKPlayRecord.m */,
+			);
+			path = tool;
+			sourceTree = "<group>";
+		};
 		14D90945256BA2E2008E6490 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				149D557625B044E3000344C0 /* 441_30.pcm */,
 				14ADC0932570A54C009692E9 /* red_leaf.png */,
 				1465EC362500FE6E00B0F96A /* png.png */,
 				149E6BCC2533F4BD00350129 /* KMacro.h */,
 				14D90947256BA307008E6490 /* airplay.png */,
+				149D553025B02A5C000344C0 /* meetyou_30.mp3 */,
 				14D90948256BA307008E6490 /* chrome.mp4 */,
 				14D90946256BA307008E6490 /* mayun.mp4 */,
 			);
@@ -262,6 +298,7 @@
 		14D90954256BA3F5008E6490 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				14CE242325ADA76C005C578E /* 10_audioUnit */,
 				14F9887625A1C96F00D82BC3 /* 9_block */,
 				14ADC0952570A555009692E9 /* 8_layerTest */,
 				148FF10D256F534000ED2365 /* 7_drawView */,
@@ -421,8 +458,10 @@
 				147E66E124F3C0C8002AEB33 /* LaunchScreen.storyboard in Resources */,
 				147E66DE24F3C0C8002AEB33 /* Assets.xcassets in Resources */,
 				14D90949256BA308008E6490 /* mayun.mp4 in Resources */,
+				149D557725B044E3000344C0 /* 441_30.pcm in Resources */,
 				14D9094B256BA308008E6490 /* chrome.mp4 in Resources */,
 				147E66DC24F3C0C4002AEB33 /* Main.storyboard in Resources */,
+				149D553225B02A5C000344C0 /* meetyou_30.mp3 in Resources */,
 				1465EC372500FE6E00B0F96A /* png.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -441,6 +480,8 @@
 				14D90960256BA55A008E6490 /* HViewViewController.m in Sources */,
 				148FF11D256F53BD00ED2365 /* HSDrawViewMulti.m in Sources */,
 				14D9096E256BBDC3008E6490 /* FileObject.m in Sources */,
+				14CE242625ADA79F005C578E /* HAudioUnitViewController.m in Sources */,
+				14CE242A25ADAFF5005C578E /* KKPlayer.m in Sources */,
 				148FF110256F535B00ED2365 /* HDrawViewController.m in Sources */,
 				14D9095C256BA490008E6490 /* HVideoCaptureViewController.m in Sources */,
 				147E66D324F3C0C4002AEB33 /* AppDelegate.m in Sources */,
@@ -452,6 +493,7 @@
 				1454AAB425A5B4B5001029EB /* HHitTestView.m in Sources */,
 				14D9096B256BBC60008E6490 /* HFileViewController.m in Sources */,
 				14D9097C256BC10A008E6490 /* CAgent.mm in Sources */,
+				14865F1725B18184007A8ADC /* KKPlayRecord.m in Sources */,
 				1482C22E24FF8FD000C973E3 /* Person.m in Sources */,
 				14D9097A256BC10A008E6490 /* CClient.cpp in Sources */,
 				147E66E424F3C0C8002AEB33 /* main.m in Sources */,

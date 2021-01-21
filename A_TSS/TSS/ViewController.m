@@ -16,6 +16,7 @@
 #import "HDrawViewController.h"
 #import "HLayerViewController.h"
 #import "HBlockViewController.h"
+#import "HAudioUnitViewController.h"
 
 typedef NS_ENUM(NSInteger ,VCType) {
     VCType_ViewTest,        //view test
@@ -27,6 +28,7 @@ typedef NS_ENUM(NSInteger ,VCType) {
     VCType_DrawView,        //view绘制相关
     VCType_LayerTest,       //Layer 测试
     VCType_Block,           //Block 相关
+    VCType_AudioUnit,       //AudioUnit test
 };
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -49,6 +51,7 @@ typedef NS_ENUM(NSInteger ,VCType) {
         @"Draw View About",
         @"Layer Test",
         @"Block Test",
+        @"AudioUnit Test",
     ];
     return data;
 }
@@ -125,6 +128,9 @@ typedef NS_ENUM(NSInteger ,VCType) {
             break;
         case VCType_Block:
             vcController = [HBlockViewController new];
+            break;
+        case VCType_AudioUnit:
+            vcController = [HAudioUnitViewController new];
             break;
             
         default:
