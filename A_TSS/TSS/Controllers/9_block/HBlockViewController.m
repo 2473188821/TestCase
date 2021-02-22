@@ -35,7 +35,7 @@ typedef void(^BlockRetainCycle)(id obj);
     
     self.block();
     NSLog(@"出来后---：%@",&a);
-
+    
     // Do any additional setup after loading the view.
 }
 
@@ -43,10 +43,10 @@ typedef void(^BlockRetainCycle)(id obj);
 - (void)demoBlockType {
     // __NSGlobalBlock__ 全局block
     void(^block1)(void) = ^{
-           NSLog(@"hello---");
+        NSLog(@"hello---");
     };
     NSLog(@"__NSGlobalBlock__:%@",block1);
-       
+    
     //__NSMallocBlock__ 堆block 重写 = 做了copy操作
     int a = 1110;
     void(^block)(void) = ^{
@@ -64,31 +64,32 @@ typedef void(^BlockRetainCycle)(id obj);
 //解法一
 - (void)demoRetainCycle1 {
     __weak typeof(self)weakself = self;
-       self.block = ^{
-           __strong typeof(self) strongself = weakself;
-           strongself.name = @"zhangsan";
-           
-           dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-               NSLog(@"name----:%@",strongself.name);
-           });
-       };
-       
-       self.block();
+    
+    self.block = ^{
+        __strong typeof(self) strongself = weakself;
+        strongself.name = @"zhangsan";
+        
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            NSLog(@"name----:%@",strongself.name);
+        });
+    };
+    
+    self.block();
 }
 
 //解法二
 - (void)demoRetainCycle2 {
     __block HBlockViewController *hblock = self;
     self.block = ^{
-           hblock.name = @"zhangsan";
-           dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-               NSLog(@"name----:%@",hblock.name);
-               
-               hblock = nil;
-           });
-       };
-       
-       self.block();
+        hblock.name = @"zhangsan";
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            NSLog(@"name----:%@",hblock.name);
+            
+            hblock = nil;
+        });
+    };
+    
+    self.block();
 }
 //解法三
 - (void)demoRetainCycle3 {
@@ -114,13 +115,13 @@ typedef void(^BlockRetainCycle)(id obj);
 
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end
