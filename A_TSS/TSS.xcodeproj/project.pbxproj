@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14404112261BF67600CF6064 /* KKK.m in Sources */ = {isa = PBXBuildFile; fileRef = 14404111261BF67600CF6064 /* KKK.m */; };
 		1454AAB425A5B4B5001029EB /* HHitTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1454AAB325A5B4B5001029EB /* HHitTestView.m */; };
 		1465EC372500FE6E00B0F96A /* png.png in Resources */ = {isa = PBXBuildFile; fileRef = 1465EC362500FE6E00B0F96A /* png.png */; };
 		1476091D25BEADB600ED235F /* VideoEncode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1476091C25BEADB600ED235F /* VideoEncode.m */; };
@@ -56,6 +57,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		14404110261BF67600CF6064 /* KKK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKK.h; sourceTree = "<group>"; };
+		14404111261BF67600CF6064 /* KKK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKK.m; sourceTree = "<group>"; };
 		1454AAB225A5B4B5001029EB /* HHitTestView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHitTestView.h; sourceTree = "<group>"; };
 		1454AAB325A5B4B5001029EB /* HHitTestView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHitTestView.m; sourceTree = "<group>"; };
 		1465EC362500FE6E00B0F96A /* png.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = png.png; sourceTree = "<group>"; };
@@ -256,6 +259,8 @@
 		14A7999E260AED75009081B2 /* 11、GCD */ = {
 			isa = PBXGroup;
 			children = (
+				14404110261BF67600CF6064 /* KKK.h */,
+				14404111261BF67600CF6064 /* KKK.m */,
 				14A7999F260AED98009081B2 /* GCDViewController.h */,
 				14A799A0260AED98009081B2 /* GCDViewController.m */,
 			);
@@ -534,6 +539,7 @@
 				14A799A1260AED98009081B2 /* GCDViewController.m in Sources */,
 				14D9097C256BC10A008E6490 /* CAgent.mm in Sources */,
 				14865F1725B18184007A8ADC /* KKPlayRecord.m in Sources */,
+				14404112261BF67600CF6064 /* KKK.m in Sources */,
 				1482C22E24FF8FD000C973E3 /* Person.m in Sources */,
 				14D9097A256BC10A008E6490 /* CClient.cpp in Sources */,
 				147E66E424F3C0C8002AEB33 /* main.m in Sources */,

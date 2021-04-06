@@ -7,12 +7,16 @@
 //
 
 #import "GCDViewController.h"
+#import "KKK.h"
 
 @interface GCDViewController ()
 {
     dispatch_semaphore_t semaphore;
     NSInteger count;
 }
+//单例销毁测试
+@property(nonatomic,strong)KKK *kkSingle;
+
 
 @end
 
@@ -22,6 +26,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    
+    if (_kkSingle) {
+        [_kkSingle dellocInstance];
+    }
+    
+    _kkSingle = [KKK shareInstance];
 }
 
 /*
