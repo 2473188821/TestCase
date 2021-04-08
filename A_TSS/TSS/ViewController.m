@@ -135,7 +135,7 @@ typedef NS_ENUM(NSInteger ,VCType) {
         case VCType_AudioUnit:
             vcController = [HAudioUnitViewController new];
             break;
-        case VCType_AudioUnit:
+        case VCType_GCD:
             vcController = [GCDViewController new];
             break;
             

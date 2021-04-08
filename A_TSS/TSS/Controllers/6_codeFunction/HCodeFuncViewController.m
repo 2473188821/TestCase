@@ -10,6 +10,14 @@
 #import "Person.h"
 
 @interface HCodeFuncViewController ()
+@property(nonatomic,strong)UIView *eView;
+
+@property(nonatomic,copy)NSString *nameCopy;
+@property(nonatomic,strong)NSString *nameStrong;
+
+@property(nonatomic,strong)NSMutableString *muteName;
+
+@property(nonatomic,copy)NSNumber *number;
 
 @end
 
@@ -46,9 +54,70 @@
     
     pp.nameCall(@"hello").ageCall(25);
     pp.name(@"zhangsan").age(22);
-    
 }
 
+//copy 、strong、weak
+- (void)testRetainCount {
+     //strong UIView
+     NSLog(@"retainCount--UIView--%d",[[UIView new] retainCount]);
+     self.eView = [UIView new];
+     NSLog(@"retainCount--UIView--%d",[_eView retainCount]);
+     [self.view addSubview:self.eView];
+     NSLog(@"retainCount--UIView--%d",[_eView retainCount]);
+    
+     //strong NSMutableString
+     NSLog(@"retainCount--NSMutableString--%d",[[[NSMutableString alloc]initWithString:@"hook"] retainCount]);
+     self.muteName = [[NSMutableString alloc]initWithString:@"hook"];
+     NSLog(@"retainCount--NSMutableString--%d",[_muteName retainCount]);
+
+     //copy NSString
+     NSLog(@"retainCount--NSString--%d",[[[NSString alloc]initWithFormat:@"hello"] retainCount]);
+     self.nameCopy = [[NSString alloc]initWithFormat:@"hello"];
+     [self.nameCopy retain];
+     [self.nameCopy retain];
+
+     NSLog(@"retainCount--NSString--%d",[_nameCopy retainCount]);
+
+     //copy NSNumber
+     NSLog(@"retainCount--NSNumber--%d",[[NSNumber numberWithInt:5] retainCount]);
+     self.number = [NSNumber numberWithInt:4];
+     NSLog(@"retainCount--NSNumber--%d",[self.number retainCount]);
+
+    NSString *string = nil;
+    @autoreleasepool {
+         string = [[NSString alloc]initWithFormat:@"hello"];
+    }
+    
+    NSLog(@"viewDidLoad--@autoreleasepool--%@",string);
+
+    /* result
+     2021-04-08 12:47:49.953058+0800 TestDoc[32442:770268] retainCount--UIView--1
+     2021-04-08 12:47:49.953212+0800 TestDoc[32442:770268] retainCount--UIView--2
+     2021-04-08 12:47:49.953333+0800 TestDoc[32442:770268] retainCount--UIView--3
+     2021-04-08 12:47:49.953416+0800 TestDoc[32442:770268] retainCount--NSMutableString--1
+     2021-04-08 12:47:49.953506+0800 TestDoc[32442:770268] retainCount--NSMutableString--2
+     2021-04-08 12:47:49.953600+0800 TestDoc[32442:770268] retainCount--NSString---1
+     2021-04-08 12:47:49.953686+0800 TestDoc[32442:770268] retainCount--NSString---1
+     2021-04-08 12:47:49.953760+0800 TestDoc[32442:770268] retainCount--NSNumber---1
+     2021-04-08 12:47:49.953845+0800 TestDoc[32442:770268] retainCount--NSNumber---1
+     2021-04-08 12:47:49.953936+0800 TestDoc[32442:770268] viewDidLoad--@autoreleasepool--hello
+     2021-04-08 12:47:49.963187+0800 TestDoc[32442:770268] viewWillAppear----(null)
+     2021-04-08 12:47:49.978636+0800 TestDoc[32442:770268] viewDidAppear----(null)
+     */
+    
+    int index[10];
+    int indexA[10] = {0};
+    int indexB[10] = {-1};
+
+    int i = 0;
+    while ( i < 10) {
+        NSLog(@"-index---:%d",index[i]);
+        NSLog(@"-indexA---:%d",indexA[i]);
+        NSLog(@"-indexB---:%d",indexB[i]);
+        
+        i++;
+    }
+}
 /*
 #pragma mark - Navigation
 

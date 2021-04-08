@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		14404112261BF67600CF6064 /* KKK.m in Sources */ = {isa = PBXBuildFile; fileRef = 14404111261BF67600CF6064 /* KKK.m */; };
+		1440411F261BFD2900CF6064 /* ParentObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 1440411E261BFD2900CF6064 /* ParentObj.m */; };
+		14404122261BFD4200CF6064 /* ParentSubObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 14404121261BFD4200CF6064 /* ParentSubObj.m */; };
+		14404125261BFD5700CF6064 /* ParentObj+ParentCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 14404124261BFD5700CF6064 /* ParentObj+ParentCategory.m */; };
+		14404128261BFD6F00CF6064 /* ParentSubObj+ParentSubObjCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 14404127261BFD6F00CF6064 /* ParentSubObj+ParentSubObjCategory.m */; };
+		1440412E261C47BD00CF6064 /* sum.s in Sources */ = {isa = PBXBuildFile; fileRef = 1440412D261C47BD00CF6064 /* sum.s */; };
 		1454AAB425A5B4B5001029EB /* HHitTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1454AAB325A5B4B5001029EB /* HHitTestView.m */; };
 		1465EC372500FE6E00B0F96A /* png.png in Resources */ = {isa = PBXBuildFile; fileRef = 1465EC362500FE6E00B0F96A /* png.png */; };
 		1476091D25BEADB600ED235F /* VideoEncode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1476091C25BEADB600ED235F /* VideoEncode.m */; };
@@ -34,7 +39,7 @@
 		14A799A1260AED98009081B2 /* GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A799A0260AED98009081B2 /* GCDViewController.m */; };
 		14ADC0942570A54C009692E9 /* red_leaf.png in Resources */ = {isa = PBXBuildFile; fileRef = 14ADC0932570A54C009692E9 /* red_leaf.png */; };
 		14ADC0982570A568009692E9 /* HLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14ADC0972570A568009692E9 /* HLayerViewController.m */; };
-		14B090C7256E042800023E43 /* HCodeFuncViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B090C6256E042800023E43 /* HCodeFuncViewController.m */; };
+		14B090C7256E042800023E43 /* HCodeFuncViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B090C6256E042800023E43 /* HCodeFuncViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		14CE242625ADA79F005C578E /* HAudioUnitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CE242525ADA79F005C578E /* HAudioUnitViewController.m */; };
 		14CE242A25ADAFF5005C578E /* KKPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CE242925ADAFF5005C578E /* KKPlayer.m */; };
 		14D90949256BA308008E6490 /* mayun.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 14D90946256BA307008E6490 /* mayun.mp4 */; };
@@ -59,6 +64,15 @@
 /* Begin PBXFileReference section */
 		14404110261BF67600CF6064 /* KKK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKK.h; sourceTree = "<group>"; };
 		14404111261BF67600CF6064 /* KKK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKK.m; sourceTree = "<group>"; };
+		1440411D261BFD2900CF6064 /* ParentObj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ParentObj.h; sourceTree = "<group>"; };
+		1440411E261BFD2900CF6064 /* ParentObj.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParentObj.m; sourceTree = "<group>"; };
+		14404120261BFD4200CF6064 /* ParentSubObj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ParentSubObj.h; sourceTree = "<group>"; };
+		14404121261BFD4200CF6064 /* ParentSubObj.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParentSubObj.m; sourceTree = "<group>"; };
+		14404123261BFD5700CF6064 /* ParentObj+ParentCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ParentObj+ParentCategory.h"; sourceTree = "<group>"; };
+		14404124261BFD5700CF6064 /* ParentObj+ParentCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ParentObj+ParentCategory.m"; sourceTree = "<group>"; };
+		14404126261BFD6F00CF6064 /* ParentSubObj+ParentSubObjCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ParentSubObj+ParentSubObjCategory.h"; sourceTree = "<group>"; };
+		14404127261BFD6F00CF6064 /* ParentSubObj+ParentSubObjCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ParentSubObj+ParentSubObjCategory.m"; sourceTree = "<group>"; };
+		1440412D261C47BD00CF6064 /* sum.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = sum.s; sourceTree = "<group>"; };
 		1454AAB225A5B4B5001029EB /* HHitTestView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHitTestView.h; sourceTree = "<group>"; };
 		1454AAB325A5B4B5001029EB /* HHitTestView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHitTestView.m; sourceTree = "<group>"; };
 		1465EC362500FE6E00B0F96A /* png.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = png.png; sourceTree = "<group>"; };
@@ -156,6 +170,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14404129261BFDA300CF6064 /* Objcet */ = {
+			isa = PBXGroup;
+			children = (
+				1440411D261BFD2900CF6064 /* ParentObj.h */,
+				1440411E261BFD2900CF6064 /* ParentObj.m */,
+				14404120261BFD4200CF6064 /* ParentSubObj.h */,
+				14404121261BFD4200CF6064 /* ParentSubObj.m */,
+				14404123261BFD5700CF6064 /* ParentObj+ParentCategory.h */,
+				14404124261BFD5700CF6064 /* ParentObj+ParentCategory.m */,
+				14404126261BFD6F00CF6064 /* ParentSubObj+ParentSubObjCategory.h */,
+				14404127261BFD6F00CF6064 /* ParentSubObj+ParentSubObjCategory.m */,
+			);
+			path = Objcet;
+			sourceTree = "<group>";
+		};
+		1440412C261C47AA00CF6064 /* Compile */ = {
+			isa = PBXGroup;
+			children = (
+				1440412D261C47BD00CF6064 /* sum.s */,
+			);
+			path = Compile;
+			sourceTree = "<group>";
+		};
 		1476091625BEAD4B00ED235F /* Encode */ = {
 			isa = PBXGroup;
 			children = (
@@ -279,6 +316,8 @@
 		14B090C4256E040D00023E43 /* 6_codeFunction */ = {
 			isa = PBXGroup;
 			children = (
+				1440412C261C47AA00CF6064 /* Compile */,
+				14404129261BFDA300CF6064 /* Objcet */,
 				1482C22C24FF8FD000C973E3 /* Person.h */,
 				1482C22D24FF8FD000C973E3 /* Person.m */,
 				14B090C5256E042800023E43 /* HCodeFuncViewController.h */,
@@ -530,6 +569,7 @@
 				14D9095C256BA490008E6490 /* HVideoCaptureViewController.m in Sources */,
 				147E66D324F3C0C4002AEB33 /* AppDelegate.m in Sources */,
 				14D90958256BA43A008E6490 /* HHBaseViewController.m in Sources */,
+				14404125261BFD5700CF6064 /* ParentObj+ParentCategory.m in Sources */,
 				14D90967256BB17C008E6490 /* HSortViewController.m in Sources */,
 				148FF11E256F53BD00ED2365 /* SignatureViewQuartzQuadratic.m in Sources */,
 				148FF121256F53BD00ED2365 /* SignatureViewQuartz.m in Sources */,
@@ -539,17 +579,21 @@
 				14A799A1260AED98009081B2 /* GCDViewController.m in Sources */,
 				14D9097C256BC10A008E6490 /* CAgent.mm in Sources */,
 				14865F1725B18184007A8ADC /* KKPlayRecord.m in Sources */,
+				14404122261BFD4200CF6064 /* ParentSubObj.m in Sources */,
 				14404112261BF67600CF6064 /* KKK.m in Sources */,
 				1482C22E24FF8FD000C973E3 /* Person.m in Sources */,
 				14D9097A256BC10A008E6490 /* CClient.cpp in Sources */,
+				1440412E261C47BD00CF6064 /* sum.s in Sources */,
 				147E66E424F3C0C8002AEB33 /* main.m in Sources */,
 				149E6BCB2533EFFD00350129 /* RankObj.m in Sources */,
 				14D9097B256BC10A008E6490 /* test.cpp in Sources */,
 				14D90953256BA346008E6490 /* HSLiveTool.m in Sources */,
 				14D90963256BB0F9008E6490 /* DragView.m in Sources */,
+				14404128261BFD6F00CF6064 /* ParentSubObj+ParentSubObjCategory.m in Sources */,
 				148FF11F256F53BD00ED2365 /* HSDrawView.m in Sources */,
 				1496C97D25B98E0200B13ADD /* HMediaTool.m in Sources */,
 				14D90952256BA346008E6490 /* HSLiveSession.m in Sources */,
+				1440411F261BFD2900CF6064 /* ParentObj.m in Sources */,
 				14F9887C25A1C9CD00D82BC3 /* HBlockViewController.m in Sources */,
 				1476091D25BEADB600ED235F /* VideoEncode.m in Sources */,
 				14D90972256BC0BF008E6490 /* HCPPViewController.m in Sources */,
@@ -695,6 +739,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 39TBB43S2R;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = TSS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -713,6 +758,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 39TBB43S2R;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = TSS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (

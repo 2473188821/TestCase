@@ -10,6 +10,8 @@
 #import "Person.h"
 #import "KMacro.h"
 
+int sum(int a, int b);
+
 @interface AppDelegate ()
 //此处是一个坑
 @property(nonatomic,copy)NSMutableArray *array;
@@ -22,6 +24,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
 
+    
+    NSLog(@"汇编--sum--:%d",sum(3, 5));
     return YES;
 }
 
