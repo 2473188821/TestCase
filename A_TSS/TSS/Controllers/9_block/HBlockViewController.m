@@ -19,6 +19,11 @@ typedef void(^BlockRetainCycle)(id obj);
 
 @property(nonatomic,copy)NSString *name;
 
+//retainCount test
+@property(nonatomic,assign)NSInteger nnn;
+@property(nonatomic,copy)NSString *string_value;
+@property(nonatomic,strong)NSMutableString *stringMutable_value;
+
 @end
 
 @implementation HBlockViewController
@@ -123,5 +128,82 @@ typedef void(^BlockRetainCycle)(id obj);
  // Pass the selected object to the new view controller.
  }
  */
+
+
+- (void)test5 {
+    static NSInteger num = 5;
+    
+    void (^block)(void) = ^() {
+        num = 12;
+        self.nnn = 111;
+        NSLog(@"value--nnn--:%ld",(long)num);
+           
+    };
+    num = 8;
+    
+    block();
+}
+
+- (void)test4 {
+    NSInteger num = 5;
+    
+    void (^block)(void) = ^() {
+        NSLog(@"value---num----:%ld",(long)num);
+           
+    };
+    num = 8;
+    
+    block();
+}
+
+//原因
+//https://blog.csdn.net/bravegogo/article/details/50792437
+
+- (void)test3 {
+    NSMutableArray *Arr = [[NSMutableArray alloc]initWithObjects:@"1",@"2", nil];
+    
+    void (^block)(void) = ^() {
+        
+        NSLog(@"value---arr----:%@",Arr);
+
+        [Arr addObject:@"4"];
+    };
+    
+    [Arr addObject:@"3"];
+    
+    Arr = nil;
+    
+    block();
+    
+    NSLog(@"value---arr----:%@",Arr);
+}
+
+- (void)retainCountTest {
+ //    self.nnn = 33;
+    NSLog(@"pppp---nn--%p---",&_nnn);
+    
+    NSInteger mmm = 222;
+    NSLog(@"pppp---mm--%p---",&mmm);
+
+    
+    NSString *s1 = @"xxx";
+    NSLog(@"pppp---s1--%p---",s1);
+    
+    NSString *s2 = [[NSString alloc]initWithString:@"12"];
+    NSLog(@"pppp---s2--%p---",s2);
+    
+    NSMutableString *s3 = [[NSMutableString alloc]initWithString:@"345"];
+    NSLog(@"pppp---s3--%p---",s2);
+
+    self.string_value = s2;
+    
+    NSLog(@"pppp---s4--%p---",_string_value);
+
+    self.stringMutable_value = s3;
+    
+    NSLog(@"pppp---s5--%p---",_stringMutable_value);
+}
+
+
 
 @end
