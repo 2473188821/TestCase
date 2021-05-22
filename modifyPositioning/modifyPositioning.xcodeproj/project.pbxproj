@@ -36,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		144C7CAE2659309E009E5DD6 /* README.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = README.h; sourceTree = "<group>"; };
 		B85C64692187FBA6000CBEB2 /* HelloPosition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloPosition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B85C646C2187FBA6000CBEB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B85C646E2187FBA6000CBEB2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +110,7 @@
 				B85C64732187FBAA000CBEB2 /* Assets.xcassets */,
 				B85C64752187FBAA000CBEB2 /* LaunchScreen.storyboard */,
 				B85C64782187FBAA000CBEB2 /* Info.plist */,
+				144C7CAE2659309E009E5DD6 /* README.h */,
 			);
 			path = modifyPositioning;
 			sourceTree = "<group>";
