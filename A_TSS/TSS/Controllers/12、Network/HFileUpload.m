@@ -8,6 +8,9 @@
 
 #import "HFileUpload.h"
 
+//Blog: https://www.cnblogs.com/lyz0925/p/11609273.html
+
+
 #define kBoundary @"----WebKitFormBoundaryXGAyMbuVkeaFc916"
 #define kNewLine  [@"\r\n" dataUsingEncoding:NSUTF8StringEncoding]
 #define kNewLine_string  @"\r\n"
