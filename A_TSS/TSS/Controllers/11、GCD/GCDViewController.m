@@ -7,7 +7,7 @@
 //
 
 #import "GCDViewController.h"
-#import "KKK.h"
+#import "HKKK.h"
 
 @interface GCDViewController ()
 {
@@ -15,7 +15,7 @@
     NSInteger count;
 }
 //单例销毁测试
-@property(nonatomic,strong)KKK *kkSingle;
+@property(nonatomic,strong)HKKK *kkSingle;
 
 
 @end
@@ -34,7 +34,7 @@
         [_kkSingle dellocInstance];
     }
     
-    _kkSingle = [KKK shareInstance];
+    _kkSingle = [HKKK shareInstance];
 }
 
 /*

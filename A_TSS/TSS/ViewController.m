@@ -18,6 +18,7 @@
 #import "HBlockViewController.h"
 #import "HAudioUnitViewController.h"
 #import "GCDViewController.h"
+#import "HNetworkViewController.h"
 
 typedef NS_ENUM(NSInteger ,VCType) {
     VCType_ViewTest,        //view test
@@ -31,6 +32,7 @@ typedef NS_ENUM(NSInteger ,VCType) {
     VCType_Block,           //Block 相关
     VCType_AudioUnit,       //AudioUnit test
     VCType_GCD,             //GCD test
+    VCType_NetWork,         //文件上传
 };
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -55,6 +57,7 @@ typedef NS_ENUM(NSInteger ,VCType) {
         @"Block Test",
         @"AudioUnit Test",
         @"GCD Test",
+        @"Net Work",
     ];
     return data;
 }
@@ -137,6 +140,9 @@ typedef NS_ENUM(NSInteger ,VCType) {
             break;
         case VCType_GCD:
             vcController = [GCDViewController new];
+            break;
+        case VCType_NetWork:
+            vcController = [HNetworkViewController new];
             break;
             
         default:

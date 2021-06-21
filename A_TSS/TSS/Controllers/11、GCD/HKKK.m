@@ -6,12 +6,12 @@
 //  Copyright © 2021 Chenfy. All rights reserved.
 //
 
-#import "KKK.h"
+#import "HKKK.h"
 
-static KKK *_kk = nil;
+static HKKK *_kk = nil;
 static dispatch_once_t _token;
 
-@implementation KKK
+@implementation HKKK
 
 + (id)shareInstance {
     dispatch_once(&_token, ^{

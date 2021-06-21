@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface KKK : NSObject
+@interface HKKK : NSObject
 @property(nonatomic,copy)NSString *name;
 
 + (id)shareInstance;
