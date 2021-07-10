@@ -7,7 +7,7 @@
      Xcode will simulate a route visiting each waypoint.
      -->
 
-        <wpt lat="39.96614926584091" lon="116.35871072027967">
+        <wpt lat="39.96614926584091" lon="116.35271072027967">
         <name>Cupertino</name>
         
         <!--
