@@ -1,0 +1,10 @@
+/* 
+  InfoPlist.strings
+  TSS
+
+  Created by Chenfy on 2021/9/2.
+  Copyright © 2021 Chenfy. All rights reserved.
+*/
+
+// Localizable App Name是App在英语环境环境下显示的名称
+CFBundleDisplayName = "AppName";

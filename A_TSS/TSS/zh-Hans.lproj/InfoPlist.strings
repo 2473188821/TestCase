@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  TSS
+
+  Created by Chenfy on 2021/9/2.
+  Copyright © 2021 Chenfy. All rights reserved.
+*/
+
+CFBundleDisplayName = "App名称";

@@ -11,8 +11,22 @@
 
 
 @interface Person ()
+{
+    union {
+           char bits;
+           
+           struct {
+               char tall : 1;
+               char rich : 1;
+           };
+       } _P_tallRich;
+}
 //自旋锁
 @property(nonatomic,assign)OSSpinLock pinlock;
+
+#define MASK_tall   (1<<0)
+#define MASK_rich   (1<<1)
+
 
 @end
 
@@ -145,5 +159,33 @@ static id createPerson_static()
 {
     return [super resolveInstanceMethod:sel];
 }
+
+
+#pragma mark -- 位与
+
+- (void)setTall:(BOOL)tall {
+    if (tall) {
+        _P_tallRich.bits |= MASK_tall;
+    } else {
+        _P_tallRich.bits &= ~MASK_tall;
+    }
+}
+
+- (BOOL)isTall {
+    return !!(_P_tallRich.bits & MASK_tall);
+}
+
+- (void)setRich:(BOOL)rich {
+    if (rich) {
+        _P_tallRich.bits |= MASK_rich;
+    } else {
+        _P_tallRich.bits &= ~MASK_rich;
+    }
+}
+
+- (BOOL)isRich {
+    return !!(_P_tallRich.bits & MASK_rich);
+}
+
 
 @end

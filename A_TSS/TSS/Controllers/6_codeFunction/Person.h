@@ -49,6 +49,19 @@ typedef NS_OPTIONS(NSInteger, PFoodType) {
 id createPerson();
 static id createPerson_static();
 
+
+
+#pragma mark -- mask 位与
+@property(nonatomic,assign,getter=isTall)BOOL tall;
+@property(nonatomic,assign,getter=isRich)BOOL rich;
+
+- (void)setTall:(BOOL)tall;
+- (BOOL)isTall;
+
+- (void)setRich:(BOOL)rich;
+- (BOOL)isRich;
+
+
 @end
 
 NS_ASSUME_NONNULL_END
