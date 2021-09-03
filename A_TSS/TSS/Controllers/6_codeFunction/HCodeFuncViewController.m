@@ -128,4 +128,48 @@
 }
 */
 
+- (void)testRunLoop {
+    self.stop = NO;
+    
+    __weak typeof (self)weakself = self;
+    self.thread = [[MMThread alloc]initWithBlock:^{
+        NSLog(@"--MMThread-------begin-----%@--",[NSThread currentThread]);
+          
+        [[NSRunLoop currentRunLoop]addPort:[NSPort new] forMode:NSDefaultRunLoopMode];
+
+        NSLog(@"weakself--01---:%@",weakself);
+        while (weakself && !weakself.isStop) {
+            NSLog(@"weakself--02---:%@",weakself);
+
+            [[NSRunLoop currentRunLoop]runMode:NSDefaultRunLoopMode beforeDate:[NSDate distantFuture]];
+        }
+        
+        NSLog(@"--MMThread-------end-----%@--",[NSThread currentThread]);
+    }];
+    [self.thread start];
+}
+
+- (void)runInThread {
+    NSLog(@"---------runInThread-----%@--",[NSThread currentThread]);
+}
+
+- (void)stopThread {
+    if (self.thread) {
+        [self performSelector:@selector(exitThread) onThread:self.thread withObject:nil waitUntilDone:YES];
+    }
+}
+
+- (void)exitThread {
+    self.stop = YES;
+    CFRunLoopStop(CFRunLoopGetCurrent());
+    self.thread = nil;
+    NSLog(@"---------exitThread-----%@--",[NSThread currentThread]);
+}
+
+- (void)dealloc {
+    NSLog(@"-----%s---",__func__);
+    
+    [self stopThread];
+}
+
 @end

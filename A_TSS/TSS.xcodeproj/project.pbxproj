@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		143EC1FB26E232360089819F /* MMThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 143EC1FA26E232360089819F /* MMThread.m */; };
 		14404112261BF67600CF6064 /* HKKK.m in Sources */ = {isa = PBXBuildFile; fileRef = 14404111261BF67600CF6064 /* HKKK.m */; };
 		1440411F261BFD2900CF6064 /* ParentObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 1440411E261BFD2900CF6064 /* ParentObj.m */; };
 		14404122261BFD4200CF6064 /* ParentSubObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 14404121261BFD4200CF6064 /* ParentSubObj.m */; };
@@ -66,6 +67,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		143EC1F926E232360089819F /* MMThread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMThread.h; sourceTree = "<group>"; };
+		143EC1FA26E232360089819F /* MMThread.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMThread.m; sourceTree = "<group>"; };
 		14404110261BF67600CF6064 /* HKKK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKKK.h; sourceTree = "<group>"; };
 		14404111261BF67600CF6064 /* HKKK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKKK.m; sourceTree = "<group>"; };
 		1440411D261BFD2900CF6064 /* ParentObj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ParentObj.h; sourceTree = "<group>"; };
@@ -343,6 +346,8 @@
 				14B090C6256E042800023E43 /* HCodeFuncViewController.m */,
 				1494BB9F26DF23BB0088114B /* HObjcMsgSend.h */,
 				1494BBA026DF23BB0088114B /* HObjcMsgSend.m */,
+				143EC1F926E232360089819F /* MMThread.h */,
+				143EC1FA26E232360089819F /* MMThread.m */,
 			);
 			path = 6_codeFunction;
 			sourceTree = "<group>";
@@ -599,6 +604,7 @@
 				14D90960256BA55A008E6490 /* HViewViewController.m in Sources */,
 				148FF11D256F53BD00ED2365 /* HSDrawViewMulti.m in Sources */,
 				14D9096E256BBDC3008E6490 /* FileObject.m in Sources */,
+				143EC1FB26E232360089819F /* MMThread.m in Sources */,
 				14CE242625ADA79F005C578E /* HAudioUnitViewController.m in Sources */,
 				14CE242A25ADAFF5005C578E /* KKPlayer.m in Sources */,
 				148FF110256F535B00ED2365 /* HDrawViewController.m in Sources */,
