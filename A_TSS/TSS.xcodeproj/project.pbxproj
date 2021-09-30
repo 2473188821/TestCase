@@ -15,6 +15,7 @@
 		14404128261BFD6F00CF6064 /* ParentSubObj+ParentSubObjCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 14404127261BFD6F00CF6064 /* ParentSubObj+ParentSubObjCategory.m */; };
 		1440412E261C47BD00CF6064 /* sum.s in Sources */ = {isa = PBXBuildFile; fileRef = 1440412D261C47BD00CF6064 /* sum.s */; };
 		1454AAB425A5B4B5001029EB /* HHitTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1454AAB325A5B4B5001029EB /* HHitTestView.m */; };
+		145BD36E2701BE2E004600C8 /* HAlgorithm.m in Sources */ = {isa = PBXBuildFile; fileRef = 145BD36D2701BE2E004600C8 /* HAlgorithm.m */; };
 		1465EC372500FE6E00B0F96A /* png.png in Resources */ = {isa = PBXBuildFile; fileRef = 1465EC362500FE6E00B0F96A /* png.png */; };
 		146E431726E0CFB7009F7308 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 146E431926E0CFB7009F7308 /* InfoPlist.strings */; };
 		1476091D25BEADB600ED235F /* VideoEncode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1476091C25BEADB600ED235F /* VideoEncode.m */; };
@@ -82,6 +83,8 @@
 		1440412D261C47BD00CF6064 /* sum.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = sum.s; sourceTree = "<group>"; };
 		1454AAB225A5B4B5001029EB /* HHitTestView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHitTestView.h; sourceTree = "<group>"; };
 		1454AAB325A5B4B5001029EB /* HHitTestView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHitTestView.m; sourceTree = "<group>"; };
+		145BD36C2701BE2E004600C8 /* HAlgorithm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HAlgorithm.h; sourceTree = "<group>"; };
+		145BD36D2701BE2E004600C8 /* HAlgorithm.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HAlgorithm.m; sourceTree = "<group>"; };
 		1465EC362500FE6E00B0F96A /* png.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = png.png; sourceTree = "<group>"; };
 		146E431026E0CF23009F7308 /* en-IN */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-IN"; path = "en-IN.lproj/Main.strings"; sourceTree = "<group>"; };
 		146E431126E0CF24009F7308 /* en-IN */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-IN"; path = "en-IN.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
@@ -459,6 +462,8 @@
 				149E6BCA2533EFFD00350129 /* RankObj.m */,
 				14D90965256BB17C008E6490 /* HSortViewController.h */,
 				14D90966256BB17C008E6490 /* HSortViewController.m */,
+				145BD36C2701BE2E004600C8 /* HAlgorithm.h */,
+				145BD36D2701BE2E004600C8 /* HAlgorithm.m */,
 			);
 			path = 3_SortAlga;
 			sourceTree = "<group>";
@@ -604,6 +609,7 @@
 				14D90960256BA55A008E6490 /* HViewViewController.m in Sources */,
 				148FF11D256F53BD00ED2365 /* HSDrawViewMulti.m in Sources */,
 				14D9096E256BBDC3008E6490 /* FileObject.m in Sources */,
+				145BD36E2701BE2E004600C8 /* HAlgorithm.m in Sources */,
 				143EC1FB26E232360089819F /* MMThread.m in Sources */,
 				14CE242625ADA79F005C578E /* HAudioUnitViewController.m in Sources */,
 				14CE242A25ADAFF5005C578E /* KKPlayer.m in Sources */,
