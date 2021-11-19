@@ -7,6 +7,8 @@
 //
 
 #import "ParentObj+ParentCategory.h"
+#import <objc/runtime.h>
+#import <objc/message.h>
 
 @implementation ParentObj (ParentCategory)
 
@@ -38,6 +40,7 @@ void setName(id self ,SEL _cmd ,NSString *newName) {
     Class class = [self class];
     object_setClass(self, class_getSuperclass(class));
     
+    /*
     objc_msgSend(self,@selector(setName:),newName);
     
     id observe = objc_getAssociatedObject(self, "objc");
@@ -45,6 +48,7 @@ void setName(id self ,SEL _cmd ,NSString *newName) {
     if (observe) {
         objc_msgSend(observe,@selector(observeValueForKeyPath:ofObject:change:context:),nil);
     }
+     */
     
     //改回子类class类型
     object_setClass(self, class);

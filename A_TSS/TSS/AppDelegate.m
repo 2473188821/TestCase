@@ -10,7 +10,7 @@
 #import "Person.h"
 #import "KMacro.h"
 
-int sum(int a, int b);
+//int sum(int a, int b);
 
 @interface AppDelegate ()
 //此处是一个坑
@@ -25,7 +25,7 @@ int sum(int a, int b);
     // Override point for customization after application launch.
 
     
-    NSLog(@"汇编--sum--:%d",sum(3, 5));
+//    NSLog(@"汇编--sum--:%d",sum(3, 5));
     return YES;
 }
 

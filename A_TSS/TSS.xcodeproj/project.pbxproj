@@ -13,7 +13,6 @@
 		14404122261BFD4200CF6064 /* ParentSubObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 14404121261BFD4200CF6064 /* ParentSubObj.m */; };
 		14404125261BFD5700CF6064 /* ParentObj+ParentCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 14404124261BFD5700CF6064 /* ParentObj+ParentCategory.m */; };
 		14404128261BFD6F00CF6064 /* ParentSubObj+ParentSubObjCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 14404127261BFD6F00CF6064 /* ParentSubObj+ParentSubObjCategory.m */; };
-		1440412E261C47BD00CF6064 /* sum.s in Sources */ = {isa = PBXBuildFile; fileRef = 1440412D261C47BD00CF6064 /* sum.s */; };
 		1454AAB425A5B4B5001029EB /* HHitTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1454AAB325A5B4B5001029EB /* HHitTestView.m */; };
 		145BD36E2701BE2E004600C8 /* HAlgorithm.m in Sources */ = {isa = PBXBuildFile; fileRef = 145BD36D2701BE2E004600C8 /* HAlgorithm.m */; };
 		1465EC372500FE6E00B0F96A /* png.png in Resources */ = {isa = PBXBuildFile; fileRef = 1465EC362500FE6E00B0F96A /* png.png */; };
@@ -44,6 +43,7 @@
 		14ADC0942570A54C009692E9 /* red_leaf.png in Resources */ = {isa = PBXBuildFile; fileRef = 14ADC0932570A54C009692E9 /* red_leaf.png */; };
 		14ADC0982570A568009692E9 /* HLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14ADC0972570A568009692E9 /* HLayerViewController.m */; };
 		14B090C7256E042800023E43 /* HCodeFuncViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B090C6256E042800023E43 /* HCodeFuncViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		14C72D62274743CE009AFF14 /* HFFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C72D61274743CE009AFF14 /* HFFunction.m */; };
 		14CE242625ADA79F005C578E /* HAudioUnitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CE242525ADA79F005C578E /* HAudioUnitViewController.m */; };
 		14CE242A25ADAFF5005C578E /* KKPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CE242925ADAFF5005C578E /* KKPlayer.m */; };
 		14D90949256BA308008E6490 /* mayun.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 14D90946256BA307008E6490 /* mayun.mp4 */; };
@@ -141,6 +141,8 @@
 		14ADC0972570A568009692E9 /* HLayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLayerViewController.m; sourceTree = "<group>"; };
 		14B090C5256E042800023E43 /* HCodeFuncViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCodeFuncViewController.h; sourceTree = "<group>"; };
 		14B090C6256E042800023E43 /* HCodeFuncViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCodeFuncViewController.m; sourceTree = "<group>"; };
+		14C72D60274743CE009AFF14 /* HFFunction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HFFunction.h; sourceTree = "<group>"; };
+		14C72D61274743CE009AFF14 /* HFFunction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HFFunction.m; sourceTree = "<group>"; };
 		14CE242425ADA79F005C578E /* HAudioUnitViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HAudioUnitViewController.h; sourceTree = "<group>"; };
 		14CE242525ADA79F005C578E /* HAudioUnitViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HAudioUnitViewController.m; sourceTree = "<group>"; };
 		14CE242825ADAFF5005C578E /* KKPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKPlayer.h; sourceTree = "<group>"; };
@@ -351,6 +353,8 @@
 				1494BBA026DF23BB0088114B /* HObjcMsgSend.m */,
 				143EC1F926E232360089819F /* MMThread.h */,
 				143EC1FA26E232360089819F /* MMThread.m */,
+				14C72D60274743CE009AFF14 /* HFFunction.h */,
+				14C72D61274743CE009AFF14 /* HFFunction.m */,
 			);
 			path = 6_codeFunction;
 			sourceTree = "<group>";
@@ -613,6 +617,7 @@
 				143EC1FB26E232360089819F /* MMThread.m in Sources */,
 				14CE242625ADA79F005C578E /* HAudioUnitViewController.m in Sources */,
 				14CE242A25ADAFF5005C578E /* KKPlayer.m in Sources */,
+				14C72D62274743CE009AFF14 /* HFFunction.m in Sources */,
 				148FF110256F535B00ED2365 /* HDrawViewController.m in Sources */,
 				14D9095C256BA490008E6490 /* HVideoCaptureViewController.m in Sources */,
 				147E66D324F3C0C4002AEB33 /* AppDelegate.m in Sources */,
@@ -632,7 +637,6 @@
 				14404112261BF67600CF6064 /* HKKK.m in Sources */,
 				1482C22E24FF8FD000C973E3 /* Person.m in Sources */,
 				14D9097A256BC10A008E6490 /* CClient.cpp in Sources */,
-				1440412E261C47BD00CF6064 /* sum.s in Sources */,
 				147E66E424F3C0C8002AEB33 /* main.m in Sources */,
 				149E6BCB2533EFFD00350129 /* RankObj.m in Sources */,
 				14D9097B256BC10A008E6490 /* test.cpp in Sources */,
