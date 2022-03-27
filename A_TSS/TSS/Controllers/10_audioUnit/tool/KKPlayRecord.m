@@ -73,7 +73,7 @@
     // 给 buffer 开辟空间
     buffer = malloc(PR_CONST_BUFFER_SIZE);
     
-    // 创建 AudioComponentDescription
+    // 创建 AudioComponentDescription 
     AudioComponentDescription   audioDesc;
     audioDesc.componentType = kAudioUnitType_Output;
     audioDesc.componentSubType = kAudioUnitSubType_RemoteIO;
