@@ -26,6 +26,8 @@
 		147E66E424F3C0C8002AEB33 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 147E66E324F3C0C8002AEB33 /* main.m */; };
 		1482C22E24FF8FD000C973E3 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 1482C22D24FF8FD000C973E3 /* Person.m */; };
 		14865F1725B18184007A8ADC /* KKPlayRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 14865F1625B18184007A8ADC /* KKPlayRecord.m */; };
+		148889A527F1E2E400240FD1 /* ExceptionObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 148889A127F1E2E400240FD1 /* ExceptionObject.m */; };
+		148889A627F1E2E400240FD1 /* FileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 148889A227F1E2E400240FD1 /* FileManager.m */; };
 		148FF110256F535B00ED2365 /* HDrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 148FF10F256F535B00ED2365 /* HDrawViewController.m */; };
 		148FF11D256F53BD00ED2365 /* HSDrawViewMulti.m in Sources */ = {isa = PBXBuildFile; fileRef = 148FF112256F53BD00ED2365 /* HSDrawViewMulti.m */; };
 		148FF11E256F53BD00ED2365 /* SignatureViewQuartzQuadratic.m in Sources */ = {isa = PBXBuildFile; fileRef = 148FF114256F53BD00ED2365 /* SignatureViewQuartzQuadratic.m */; };
@@ -109,6 +111,10 @@
 		1482C22D24FF8FD000C973E3 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		14865F1525B18184007A8ADC /* KKPlayRecord.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKPlayRecord.h; sourceTree = "<group>"; };
 		14865F1625B18184007A8ADC /* KKPlayRecord.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKPlayRecord.m; sourceTree = "<group>"; };
+		148889A127F1E2E400240FD1 /* ExceptionObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExceptionObject.m; sourceTree = "<group>"; };
+		148889A227F1E2E400240FD1 /* FileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileManager.m; sourceTree = "<group>"; };
+		148889A327F1E2E400240FD1 /* FileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileManager.h; sourceTree = "<group>"; };
+		148889A427F1E2E400240FD1 /* ExceptionObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExceptionObject.h; sourceTree = "<group>"; };
 		148FF10E256F535B00ED2365 /* HDrawViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDrawViewController.h; sourceTree = "<group>"; };
 		148FF10F256F535B00ED2365 /* HDrawViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDrawViewController.m; sourceTree = "<group>"; };
 		148FF112256F53BD00ED2365 /* HSDrawViewMulti.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSDrawViewMulti.m; sourceTree = "<group>"; };
@@ -475,6 +481,10 @@
 		14D90968256BBC49008E6490 /* 4_fileHandle */ = {
 			isa = PBXGroup;
 			children = (
+				148889A427F1E2E400240FD1 /* ExceptionObject.h */,
+				148889A127F1E2E400240FD1 /* ExceptionObject.m */,
+				148889A327F1E2E400240FD1 /* FileManager.h */,
+				148889A227F1E2E400240FD1 /* FileManager.m */,
 				14D9096C256BBDC3008E6490 /* FileObject.h */,
 				14D9096D256BBDC3008E6490 /* FileObject.m */,
 				14D90969256BBC60008E6490 /* HFileViewController.h */,
@@ -624,6 +634,8 @@
 				14D90958256BA43A008E6490 /* HHBaseViewController.m in Sources */,
 				14FCB8C326809F2A00CB67FA /* HNetworkViewController.m in Sources */,
 				14404125261BFD5700CF6064 /* ParentObj+ParentCategory.m in Sources */,
+				148889A527F1E2E400240FD1 /* ExceptionObject.m in Sources */,
+				148889A627F1E2E400240FD1 /* FileManager.m in Sources */,
 				14D90967256BB17C008E6490 /* HSortViewController.m in Sources */,
 				148FF11E256F53BD00ED2365 /* SignatureViewQuartzQuadratic.m in Sources */,
 				148FF121256F53BD00ED2365 /* SignatureViewQuartz.m in Sources */,
