@@ -23,6 +23,30 @@
     self.title = @"Root Controller";
     self.navigationController.navigationBar.backgroundColor = UIColor.lightGrayColor;
     self.view.backgroundColor = UIColor.lightGrayColor;
+}
+#pragma mark -- Button Create
+- (UIButton *)createButton:(NSString *)title frame:(CGRect)frame
+{
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn.frame = frame;
+    [btn setTitle:title forState:UIControlStateNormal];
+    btn.backgroundColor = [UIColor orangeColor];
+    return btn;
+}
+
+- (void)injected
+{
+    NSLog(@"I've been injected: %@", self);
+
+    CGRect frm = CGRectMake(100, 100, 100, 100);
+    UIButton *btn = [self createButton:@"Test" frame:frm];
+    [btn addTarget:self action:@selector(buttonClicked) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
+}
+
+- (void)buttonClicked {
+    NSLog(@"button clicked!");
+    NSLog(@"button clicked!");
 
 }
 

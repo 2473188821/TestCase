@@ -1,3 +1,81 @@
-PODFILE CHECKSUM: 487356631e999d5e0376d840e61751f5802fc90c
+PODS:
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
+  - Aspects (1.4.1)
+  - Bugly (2.5.91)
+  - fishhook (0.2)
+  - Masonry (1.1.0)
+  - matrix-wechat (0.6.5):
+    - matrix-wechat/matrixARC (= 0.6.5)
+    - matrix-wechat/matrixNonARC1 (= 0.6.5)
+    - matrix-wechat/matrixNonARC2 (= 0.6.5)
+  - matrix-wechat/matrixARC (0.6.5):
+    - matrix-wechat/matrixNonARC1
+  - matrix-wechat/matrixNonARC1 (0.6.5)
+  - matrix-wechat/matrixNonARC2 (0.6.5):
+    - matrix-wechat/matrixARC
+  - MJRefresh (3.5.0)
+  - OOMDetector (1.3):
+    - fishhook (= 0.2)
+  - RSSwizzle (0.1.0)
+  - SkyLab (1.0.0)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
+
+DEPENDENCIES:
+  - AFNetworking
+  - Aspects
+  - Bugly
+  - fishhook
+  - Masonry
+  - matrix-wechat
+  - MJRefresh
+  - OOMDetector
+  - RSSwizzle
+  - SkyLab
+  - YYKit
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
+    - Aspects
+    - Bugly
+    - fishhook
+    - Masonry
+    - matrix-wechat
+    - MJRefresh
+    - OOMDetector
+    - RSSwizzle
+    - SkyLab
+    - YYKit
+
+SPEC CHECKSUMS:
+  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
+  Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
+  Bugly: afe841bba2ea6de6d432a3c125240a5e75949c55
+  fishhook: ea19933abfe8f2f52c55fd8b6e2718467d3ebc89
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  matrix-wechat: 4e8a4047dde97c4634ef782edcd69ce276c5b4ab
+  MJRefresh: 6afc955813966afb08305477dd7a0d9ad5e79a16
+  OOMDetector: c23f4dfc969ea9bbd68a57cf7e5a3ca2169263cd
+  RSSwizzle: d561958f595028bfcef98c7d55c318b3878a61c6
+  SkyLab: 01d9559bbab2183e54e67dc7a8a12a22b0a4be99
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
+
+PODFILE CHECKSUM: 6b7ac6b5f2d391218713e7a7a8d5b24e4df3ce4e
 
 COCOAPODS: 1.9.1

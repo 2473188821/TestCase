@@ -6,5 +6,52 @@ target 'HelloWorld' do
   use_frameworks!
 
   # Pods for HelloWorld
+  ## Base tool
+  pod 'Masonry'
+  pod 'MJRefresh'
+  pod 'AFNetworking'
+  
+  # 崩溃收集
+  # [!] `PLCrashReporter` requires CocoaPods version `>= 1.10`, which is not satisfied by your current version, `1.9.1`.
+# pod 'PLCrashReporter'
+  pod 'Bugly'
+  
+  #日志
+#  pod 'CocoaLumberjack'
+  # 内存检测
+  pod 'matrix-wechat'
+#  pod 'MLeaksFinder'
+#  pod 'FBRetainCycleDetector'
+  pod 'OOMDetector'
+  # YY
+  pod 'YYKit'
+  # AOP 方法交换
+  pod 'RSSwizzle'
+  pod 'Aspects'
+  pod 'fishhook'
+
+  # 响应式框架
+#  pod 'ReactiveCocoa'
+  # A/B测试
+  pod 'SkyLab'
+  
+# 布局渲染框架 texture
+# pod 'Texture', '~> 2.3.4' # 'Yoga'
+ 
+#  消息事件总线
+#  pod 'PromiseKit/AVFoundation', '~> 6.15.3'
+
+#  Code静态分析检查
+#  pod 'OCLint'
+#  pod 'Infer'
+  
+#  跨平台动画框架
+#  pod 'Lottie'
+
+#  json解析优化
+#  pod 'simdjson'
+
+#  耗时统计
+#  pod 'GCDFetchFeed'
 
 end

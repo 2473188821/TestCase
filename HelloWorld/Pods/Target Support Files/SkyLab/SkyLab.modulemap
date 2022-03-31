@@ -1,0 +1,6 @@
+framework module SkyLab {
+  umbrella header "SkyLab-umbrella.h"
+
+  export *
+  module * { export * }
+}
