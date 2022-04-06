@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "HMenuTool.h"
 
 //SCREEN_SIZE 屏幕尺寸
 #define KSCREEN_WIDTH   ([UIScreen mainScreen].bounds.size.width)
@@ -21,27 +22,14 @@
 
 - (void)envInitView {
     self.title = @"Root Controller";
-    self.navigationController.navigationBar.backgroundColor = UIColor.lightGrayColor;
+    self.navigationController.navigationBar.backgroundColor = UIColor.whiteColor;
     self.view.backgroundColor = UIColor.lightGrayColor;
-}
-#pragma mark -- Button Create
-- (UIButton *)createButton:(NSString *)title frame:(CGRect)frame
-{
-    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    btn.frame = frame;
-    [btn setTitle:title forState:UIControlStateNormal];
-    btn.backgroundColor = [UIColor orangeColor];
-    return btn;
 }
 
 - (void)injected
 {
     NSLog(@"I've been injected: %@", self);
-
-    CGRect frm = CGRectMake(100, 100, 100, 100);
-    UIButton *btn = [self createButton:@"Test" frame:frm];
-    [btn addTarget:self action:@selector(buttonClicked) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:btn];
+    self.view.backgroundColor = UIColor.whiteColor;
 }
 
 - (void)buttonClicked {
@@ -54,6 +42,7 @@
     [super viewDidLoad];
     [self envInitView];
     
+    [self.view addSubview:self.tableView];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -82,7 +71,7 @@
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 1;
+    return [[HMenuTool menusArray]count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -93,12 +82,19 @@
     {
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identify];
     }
+    NSString *title = [HMenuTool menusArray][indexPath.row];
+    cell.textLabel.text = [NSString stringWithFormat:@"%ld-%@",(long)indexPath.row,title];
     return cell;
 }
 
 -  (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    NSString *title = [HMenuTool menusArray][indexPath.row];
+    NSString *vcString = [[title componentsSeparatedByString:@"-"]firstObject];
     
+    Class class = NSClassFromString(vcString);
+    UIViewController *vc = [class new];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 @end
