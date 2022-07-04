@@ -13,5 +13,8 @@
 @property (strong, nonatomic) UIWindow * window;
 @property (assign, nonatomic) BOOL shouldNeedLandscape;//是否需要横屏
 
+
+@property(nonatomic,copy)NSString *name;
+
 @end
 

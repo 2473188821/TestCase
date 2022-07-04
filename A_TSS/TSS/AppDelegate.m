@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "Person.h"
+#import "LinkerPerson.h"
 #import "KMacro.h"
 
 //int sum(int a, int b);
@@ -20,6 +20,15 @@
 
 @implementation AppDelegate
 
+@synthesize name = _name;
+
+- (NSString *)name {
+    return _name;
+}
+
+- (void)setName:(NSString *)name {
+    _name = name;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.

@@ -6,11 +6,11 @@
 //  Copyright © 2020 Chenfy. All rights reserved.
 //
 
-#import "Person.h"
+#import "LinkerPerson.h"
 #import <libkern/OSAtomic.h>
 
 
-@interface Person ()
+@interface LinkerPerson ()
 {
     union {
            char bits;
@@ -30,7 +30,7 @@
 
 @end
 
-@implementation Person
+@implementation LinkerPerson
 
 - (void)lock {
     self.pinlock = OS_SPINLOCK_INIT;
@@ -64,13 +64,13 @@
     NSLog(@"person name --:%@",name);
 }
 
-- (Person *)eat
+- (LinkerPerson *)eat
 {
     NSLog(@"person eat!");
     return self;
 }
 
-- (Person *)drink
+- (LinkerPerson *)drink
 {
     NSLog(@"person drink!");
     return self;
@@ -95,9 +95,9 @@
     };
 }
 
-- (Person * _Nonnull (^)(NSString *))nameCall
+- (LinkerPerson * _Nonnull (^)(NSString *))nameCall
 {
-    Person *(^nameBlock)(NSString *name) = ^(NSString *name){
+    LinkerPerson *(^nameBlock)(NSString *name) = ^(NSString *name){
         if (!name)
         {
             name = @"1234567";
@@ -108,7 +108,7 @@
     return nameBlock;
 }
 
-- (Person * _Nonnull (^)(int))ageCall
+- (LinkerPerson * _Nonnull (^)(int))ageCall
 {
     return ^(int age){
         NSLog(@"person block age--:%d",age);
@@ -117,9 +117,9 @@
 }
 
 
-- (Person *(^)(NSString *))name
+- (LinkerPerson *(^)(NSString *))name
 {
-    Person *(^nameBlock)(NSString *name) = ^(NSString *name){
+    LinkerPerson *(^nameBlock)(NSString *name) = ^(NSString *name){
         if (!name)
         {
             name = @"1234567";
@@ -130,7 +130,7 @@
     return nameBlock;
 }
 
-- (Person *(^)(int))age
+- (LinkerPerson *(^)(int))age
 {
     return ^(int age){
         NSLog(@"person block age--:%d",age);
@@ -141,12 +141,12 @@
 
 id createPerson()
 {
-    return [Person new];
+    return [LinkerPerson new];
 }
 
 static id createPerson_static()
 {
-    return [Person new];
+    return [LinkerPerson new];
 }
 
 #pragma mark -- 方法解析

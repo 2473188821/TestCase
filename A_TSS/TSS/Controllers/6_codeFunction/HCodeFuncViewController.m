@@ -7,7 +7,7 @@
 //
 
 #import "HCodeFuncViewController.h"
-#import "Person.h"
+#import "LinkerPerson.h"
 
 @interface HCodeFuncViewController ()
 @property(nonatomic,strong)UIView *eView;
@@ -34,19 +34,19 @@
 
 //位运算
 - (void)testCodeBinary {
-    Person *pp = [Person new];
+    LinkerPerson *pp = [LinkerPerson new];
     pp.food = PFoodType_apple | PFoodType_banana;
     
     [pp showFood];
 }
 //函数式编程
 - (void)testCodeFunction {
-    Person *pp = [Person new];
+    LinkerPerson *pp = [LinkerPerson new];
     [pp setName:@"hello zhagnsan!"];
 }
 //链式编程
 - (void)testCodeChain {
-    Person *pp = [Person new];
+    LinkerPerson *pp = [LinkerPerson new];
     [[pp eat]drink];
 
     [pp smile];
@@ -168,8 +168,15 @@
 
 - (void)dealloc {
     NSLog(@"-----%s---",__func__);
-    
     [self stopThread];
 }
 
+
+- (void)predicate_Test {
+    UIButton *d = nil;
+    NSPredicate *pr = [NSPredicate predicateWithFormat:@"name=%@",@"lisi"];
+    NSArray *arr = @[];
+    NSArray *res = [arr filteredArrayUsingPredicate:pr];
+    
+}
 @end

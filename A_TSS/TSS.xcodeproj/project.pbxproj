@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1410FA0E280D39C400E6C3C8 /* HGCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1410FA0D280D39C400E6C3C8 /* HGCDViewController.m */; };
 		143EC1FB26E232360089819F /* MMThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 143EC1FA26E232360089819F /* MMThread.m */; };
 		14404112261BF67600CF6064 /* HKKK.m in Sources */ = {isa = PBXBuildFile; fileRef = 14404111261BF67600CF6064 /* HKKK.m */; };
 		1440411F261BFD2900CF6064 /* ParentObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 1440411E261BFD2900CF6064 /* ParentObj.m */; };
@@ -17,6 +18,8 @@
 		145BD36E2701BE2E004600C8 /* HAlgorithm.m in Sources */ = {isa = PBXBuildFile; fileRef = 145BD36D2701BE2E004600C8 /* HAlgorithm.m */; };
 		1465EC372500FE6E00B0F96A /* png.png in Resources */ = {isa = PBXBuildFile; fileRef = 1465EC362500FE6E00B0F96A /* png.png */; };
 		146E431726E0CFB7009F7308 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 146E431926E0CFB7009F7308 /* InfoPlist.strings */; };
+		146E81382816976000AB32AF /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 146E81372816976000AB32AF /* Person.m */; };
+		146E813B281697CD00AB32AF /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 146E813A281697CD00AB32AF /* Student.m */; };
 		1476091D25BEADB600ED235F /* VideoEncode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1476091C25BEADB600ED235F /* VideoEncode.m */; };
 		147E66D324F3C0C4002AEB33 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 147E66D224F3C0C4002AEB33 /* AppDelegate.m */; };
 		147E66D924F3C0C4002AEB33 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 147E66D824F3C0C4002AEB33 /* ViewController.m */; };
@@ -24,7 +27,7 @@
 		147E66DE24F3C0C8002AEB33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 147E66DD24F3C0C8002AEB33 /* Assets.xcassets */; };
 		147E66E124F3C0C8002AEB33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 147E66DF24F3C0C8002AEB33 /* LaunchScreen.storyboard */; };
 		147E66E424F3C0C8002AEB33 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 147E66E324F3C0C8002AEB33 /* main.m */; };
-		1482C22E24FF8FD000C973E3 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 1482C22D24FF8FD000C973E3 /* Person.m */; };
+		1482C22E24FF8FD000C973E3 /* LinkerPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 1482C22D24FF8FD000C973E3 /* LinkerPerson.m */; };
 		14865F1725B18184007A8ADC /* KKPlayRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 14865F1625B18184007A8ADC /* KKPlayRecord.m */; };
 		148889A527F1E2E400240FD1 /* ExceptionObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 148889A127F1E2E400240FD1 /* ExceptionObject.m */; };
 		148889A627F1E2E400240FD1 /* FileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 148889A227F1E2E400240FD1 /* FileManager.m */; };
@@ -34,6 +37,7 @@
 		148FF11F256F53BD00ED2365 /* HSDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 148FF115256F53BD00ED2365 /* HSDrawView.m */; };
 		148FF120256F53BD00ED2365 /* HSDrawViewBezier.m in Sources */ = {isa = PBXBuildFile; fileRef = 148FF119256F53BD00ED2365 /* HSDrawViewBezier.m */; };
 		148FF121256F53BD00ED2365 /* SignatureViewQuartz.m in Sources */ = {isa = PBXBuildFile; fileRef = 148FF11A256F53BD00ED2365 /* SignatureViewQuartz.m */; };
+		14903B1E2811611000F0DC09 /* HMemoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14903B1D2811611000F0DC09 /* HMemoryViewController.m */; };
 		1494BBA126DF23BB0088114B /* HObjcMsgSend.m in Sources */ = {isa = PBXBuildFile; fileRef = 1494BBA026DF23BB0088114B /* HObjcMsgSend.m */; };
 		1496C97D25B98E0200B13ADD /* HMediaTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 1496C97C25B98E0200B13ADD /* HMediaTool.m */; };
 		149D553225B02A5C000344C0 /* meetyou_30.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 149D553025B02A5C000344C0 /* meetyou_30.mp3 */; };
@@ -41,6 +45,7 @@
 		149E6BBF2533ECA500350129 /* HHTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 149E6BBE2533ECA500350129 /* HHTool.m */; };
 		149E6BC22533ECEF00350129 /* HHView.m in Sources */ = {isa = PBXBuildFile; fileRef = 149E6BC12533ECEF00350129 /* HHView.m */; };
 		149E6BCB2533EFFD00350129 /* RankObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 149E6BCA2533EFFD00350129 /* RankObj.m */; };
+		14A452EE2826206000BDCB14 /* HLifecycleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A452ED2826206000BDCB14 /* HLifecycleViewController.m */; };
 		14A799A1260AED98009081B2 /* GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A799A0260AED98009081B2 /* GCDViewController.m */; };
 		14ADC0942570A54C009692E9 /* red_leaf.png in Resources */ = {isa = PBXBuildFile; fileRef = 14ADC0932570A54C009692E9 /* red_leaf.png */; };
 		14ADC0982570A568009692E9 /* HLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14ADC0972570A568009692E9 /* HLayerViewController.m */; };
@@ -70,6 +75,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1410FA0C280D39C400E6C3C8 /* HGCDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGCDViewController.h; sourceTree = "<group>"; };
+		1410FA0D280D39C400E6C3C8 /* HGCDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HGCDViewController.m; sourceTree = "<group>"; };
 		143EC1F926E232360089819F /* MMThread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMThread.h; sourceTree = "<group>"; };
 		143EC1FA26E232360089819F /* MMThread.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMThread.m; sourceTree = "<group>"; };
 		14404110261BF67600CF6064 /* HKKK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKKK.h; sourceTree = "<group>"; };
@@ -95,6 +102,10 @@
 		146E431426E0CF76009F7308 /* Globalization.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Globalization.md; sourceTree = "<group>"; };
 		146E431826E0CFB7009F7308 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		146E431A26E0CFBC009F7308 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		146E81362816976000AB32AF /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		146E81372816976000AB32AF /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		146E8139281697CD00AB32AF /* Student.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		146E813A281697CD00AB32AF /* Student.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 		1476091B25BEADB600ED235F /* VideoEncode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoEncode.h; sourceTree = "<group>"; };
 		1476091C25BEADB600ED235F /* VideoEncode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoEncode.m; sourceTree = "<group>"; };
 		147E66CE24F3C0C4002AEB33 /* TSS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TSS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,8 +118,8 @@
 		147E66E024F3C0C8002AEB33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		147E66E224F3C0C8002AEB33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		147E66E324F3C0C8002AEB33 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1482C22C24FF8FD000C973E3 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
-		1482C22D24FF8FD000C973E3 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		1482C22C24FF8FD000C973E3 /* LinkerPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinkerPerson.h; sourceTree = "<group>"; };
+		1482C22D24FF8FD000C973E3 /* LinkerPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LinkerPerson.m; sourceTree = "<group>"; };
 		14865F1525B18184007A8ADC /* KKPlayRecord.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKPlayRecord.h; sourceTree = "<group>"; };
 		14865F1625B18184007A8ADC /* KKPlayRecord.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKPlayRecord.m; sourceTree = "<group>"; };
 		148889A127F1E2E400240FD1 /* ExceptionObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExceptionObject.m; sourceTree = "<group>"; };
@@ -127,6 +138,8 @@
 		148FF119256F53BD00ED2365 /* HSDrawViewBezier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSDrawViewBezier.m; sourceTree = "<group>"; };
 		148FF11A256F53BD00ED2365 /* SignatureViewQuartz.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignatureViewQuartz.m; sourceTree = "<group>"; };
 		148FF11B256F53BD00ED2365 /* SignatureViewQuartzQuadratic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignatureViewQuartzQuadratic.h; sourceTree = "<group>"; };
+		14903B1C2811611000F0DC09 /* HMemoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HMemoryViewController.h; sourceTree = "<group>"; };
+		14903B1D2811611000F0DC09 /* HMemoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HMemoryViewController.m; sourceTree = "<group>"; };
 		1494BB9F26DF23BB0088114B /* HObjcMsgSend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HObjcMsgSend.h; sourceTree = "<group>"; };
 		1494BBA026DF23BB0088114B /* HObjcMsgSend.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HObjcMsgSend.m; sourceTree = "<group>"; };
 		1496C97B25B98E0200B13ADD /* HMediaTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HMediaTool.h; sourceTree = "<group>"; };
@@ -140,6 +153,8 @@
 		149E6BC92533EFFD00350129 /* RankObj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RankObj.h; sourceTree = "<group>"; };
 		149E6BCA2533EFFD00350129 /* RankObj.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RankObj.m; sourceTree = "<group>"; };
 		149E6BCC2533F4BD00350129 /* KMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KMacro.h; sourceTree = "<group>"; };
+		14A452EC2826206000BDCB14 /* HLifecycleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLifecycleViewController.h; sourceTree = "<group>"; };
+		14A452ED2826206000BDCB14 /* HLifecycleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLifecycleViewController.m; sourceTree = "<group>"; };
 		14A7999F260AED98009081B2 /* GCDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDViewController.h; sourceTree = "<group>"; };
 		14A799A0260AED98009081B2 /* GCDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDViewController.m; sourceTree = "<group>"; };
 		14ADC0932570A54C009692E9 /* red_leaf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red_leaf.png; sourceTree = "<group>"; };
@@ -201,6 +216,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1410FA0B280D39A000E6C3C8 /* 13、GCD单例 */ = {
+			isa = PBXGroup;
+			children = (
+				1410FA0C280D39C400E6C3C8 /* HGCDViewController.h */,
+				1410FA0D280D39C400E6C3C8 /* HGCDViewController.m */,
+			);
+			path = "13、GCD单例";
+			sourceTree = "<group>";
+		};
 		14404129261BFDA300CF6064 /* Objcet */ = {
 			isa = PBXGroup;
 			children = (
@@ -304,6 +328,15 @@
 			path = DrawView;
 			sourceTree = "<group>";
 		};
+		14903B1B281160F400F0DC09 /* 14、Memory Test */ = {
+			isa = PBXGroup;
+			children = (
+				14903B1C2811611000F0DC09 /* HMemoryViewController.h */,
+				14903B1D2811611000F0DC09 /* HMemoryViewController.m */,
+			);
+			path = "14、Memory Test";
+			sourceTree = "<group>";
+		};
 		149E6BB72533EBCC00350129 /* UIView */ = {
 			isa = PBXGroup;
 			children = (
@@ -324,6 +357,15 @@
 				149E6BBE2533ECA500350129 /* HHTool.m */,
 			);
 			path = HHFunction;
+			sourceTree = "<group>";
+		};
+		14A452EB2826202800BDCB14 /* 15、Lifecycle */ = {
+			isa = PBXGroup;
+			children = (
+				14A452EC2826206000BDCB14 /* HLifecycleViewController.h */,
+				14A452ED2826206000BDCB14 /* HLifecycleViewController.m */,
+			);
+			path = "15、Lifecycle";
 			sourceTree = "<group>";
 		};
 		14A7999E260AED75009081B2 /* 11、GCD */ = {
@@ -351,8 +393,8 @@
 			children = (
 				1440412C261C47AA00CF6064 /* Compile */,
 				14404129261BFDA300CF6064 /* Objcet */,
-				1482C22C24FF8FD000C973E3 /* Person.h */,
-				1482C22D24FF8FD000C973E3 /* Person.m */,
+				1482C22C24FF8FD000C973E3 /* LinkerPerson.h */,
+				1482C22D24FF8FD000C973E3 /* LinkerPerson.m */,
 				14B090C5256E042800023E43 /* HCodeFuncViewController.h */,
 				14B090C6256E042800023E43 /* HCodeFuncViewController.m */,
 				1494BB9F26DF23BB0088114B /* HObjcMsgSend.h */,
@@ -419,6 +461,9 @@
 		14D90954256BA3F5008E6490 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				14A452EB2826202800BDCB14 /* 15、Lifecycle */,
+				14903B1B281160F400F0DC09 /* 14、Memory Test */,
+				1410FA0B280D39A000E6C3C8 /* 13、GCD单例 */,
 				14FCB8C026809EC800CB67FA /* 12、Network */,
 				14A7999E260AED75009081B2 /* 11、GCD */,
 				14CE242325ADA76C005C578E /* 10_audioUnit */,
@@ -441,6 +486,10 @@
 			children = (
 				14D90956256BA43A008E6490 /* HHBaseViewController.h */,
 				14D90957256BA43A008E6490 /* HHBaseViewController.m */,
+				146E8139281697CD00AB32AF /* Student.h */,
+				146E813A281697CD00AB32AF /* Student.m */,
+				146E81362816976000AB32AF /* Person.h */,
+				146E81372816976000AB32AF /* Person.m */,
 			);
 			path = A_BaseController;
 			sourceTree = "<group>";
@@ -642,14 +691,17 @@
 				148FF120256F53BD00ED2365 /* HSDrawViewBezier.m in Sources */,
 				1454AAB425A5B4B5001029EB /* HHitTestView.m in Sources */,
 				14D9096B256BBC60008E6490 /* HFileViewController.m in Sources */,
+				1410FA0E280D39C400E6C3C8 /* HGCDViewController.m in Sources */,
 				14A799A1260AED98009081B2 /* GCDViewController.m in Sources */,
 				14D9097C256BC10A008E6490 /* CAgent.mm in Sources */,
 				14865F1725B18184007A8ADC /* KKPlayRecord.m in Sources */,
 				14404122261BFD4200CF6064 /* ParentSubObj.m in Sources */,
 				14404112261BF67600CF6064 /* HKKK.m in Sources */,
-				1482C22E24FF8FD000C973E3 /* Person.m in Sources */,
+				1482C22E24FF8FD000C973E3 /* LinkerPerson.m in Sources */,
 				14D9097A256BC10A008E6490 /* CClient.cpp in Sources */,
+				146E81382816976000AB32AF /* Person.m in Sources */,
 				147E66E424F3C0C8002AEB33 /* main.m in Sources */,
+				14A452EE2826206000BDCB14 /* HLifecycleViewController.m in Sources */,
 				149E6BCB2533EFFD00350129 /* RankObj.m in Sources */,
 				14D9097B256BC10A008E6490 /* test.cpp in Sources */,
 				14D90953256BA346008E6490 /* HSLiveTool.m in Sources */,
@@ -659,10 +711,12 @@
 				148FF11F256F53BD00ED2365 /* HSDrawView.m in Sources */,
 				1496C97D25B98E0200B13ADD /* HMediaTool.m in Sources */,
 				14D90952256BA346008E6490 /* HSLiveSession.m in Sources */,
+				14903B1E2811611000F0DC09 /* HMemoryViewController.m in Sources */,
 				1440411F261BFD2900CF6064 /* ParentObj.m in Sources */,
 				14F9887C25A1C9CD00D82BC3 /* HBlockViewController.m in Sources */,
 				1476091D25BEADB600ED235F /* VideoEncode.m in Sources */,
 				14D90972256BC0BF008E6490 /* HCPPViewController.m in Sources */,
+				146E813B281697CD00AB32AF /* Student.m in Sources */,
 				149E6BC22533ECEF00350129 /* HHView.m in Sources */,
 				1494BBA126DF23BB0088114B /* HObjcMsgSend.m in Sources */,
 			);

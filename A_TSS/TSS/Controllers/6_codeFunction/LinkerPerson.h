@@ -19,7 +19,7 @@ typedef NS_OPTIONS(NSInteger, PFoodType) {
     PFoodType_watermellon = 1 << 3,
 };
 
-@interface Person : NSObject
+@interface LinkerPerson : NSObject
 
 //位运算
 @property(nonatomic,assign)PFoodType food;
@@ -31,20 +31,20 @@ typedef NS_OPTIONS(NSInteger, PFoodType) {
 - (void)setName:(NSString *)name;
 
 #pragma mark -- localfunction
-- (Person *)eat;
-- (Person *)drink;
+- (LinkerPerson *)eat;
+- (LinkerPerson *)drink;
 
 #pragma mark -- block 返回值：void
 - (void(^)(void))smile;
 - (void(^)(void))laugh;
 
 #pragma mark -- block chain 返回值：self对象
-- (Person *(^)(NSString *name))nameCall;
-- (Person *(^)(int age))ageCall;
+- (LinkerPerson *(^)(NSString *name))nameCall;
+- (LinkerPerson *(^)(int age))ageCall;
 
 
-- (Person *(^)(NSString *name))name;
-- (Person *(^)(int age))age;
+- (LinkerPerson *(^)(NSString *name))name;
+- (LinkerPerson *(^)(int age))age;
 
 id createPerson();
 static id createPerson_static();

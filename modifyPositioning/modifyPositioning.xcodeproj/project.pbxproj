@@ -453,7 +453,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.class.room;
 				PRODUCT_NAME = HelloPosition;
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -472,7 +472,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.class.room;
 				PRODUCT_NAME = HelloPosition;
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -7,33 +7,10 @@
 //
 
 #import "ViewController.h"
-#import "HViewViewController.h"
-#import "HVideoCaptureViewController.h"
-#import "HSortViewController.h"
-#import "HFileViewController.h"
-#import "HCPPViewController.h"
-#import "HCodeFuncViewController.h"
-#import "HDrawViewController.h"
-#import "HLayerViewController.h"
-#import "HBlockViewController.h"
-#import "HAudioUnitViewController.h"
-#import "GCDViewController.h"
-#import "HNetworkViewController.h"
 
-typedef NS_ENUM(NSInteger ,VCType) {
-    VCType_ViewTest,        //view test
-    VCType_VideoCapture,    //音视频捕捉
-    VCType_SortAlgor,       //排序算法
-    VCType_FileHandle,      //文件句柄的使用
-    VCType_OCWithCpp,       //OC、CPP混编
-    VCType_CodeFuncTest,    //链式、函数编程测试
-    VCType_DrawView,        //view绘制相关
-    VCType_LayerTest,       //Layer 测试
-    VCType_Block,           //Block 相关
-    VCType_AudioUnit,       //AudioUnit test
-    VCType_GCD,             //GCD test
-    VCType_NetWork,         //文件上传
-};
+//SCREEN_SIZE 屏幕尺寸
+#define KSCREEN_WIDTH   ([UIScreen mainScreen].bounds.size.width)
+#define KSCREEN_HEIGTH  ([UIScreen mainScreen].bounds.size.height)
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -46,18 +23,21 @@ typedef NS_ENUM(NSInteger ,VCType) {
 
 - (NSArray *)datasource {
     NSArray *data = @[
-        @"View Test" ,
-        @"Video Capture",
-        @"Sort Algor",
-        @"File Handler",
-        @"OC with CPP",
-        @"Code Function Test",
-        @"Draw View About",
-        @"Layer Test",
-        @"Block Test",
-        @"AudioUnit Test",
-        @"GCD Test",
-        @"Net Work",
+        @"ViewTest -HViewViewController",
+        @"音视频捕捉 -HVideoCaptureViewController",
+        @"排序算法 -HSortViewController",
+        @"文件句柄的使用 -HFileViewController",
+        @"OC、CPP混编 -HCPPViewController",
+        @"链式、函数编程测试 -HCodeFuncViewController",
+        @"view绘制相关 -HDrawViewController",
+        @"Layer 测试 -HLayerViewController",
+        @"Block 相关 -HBlockViewController",
+        @"AudioUnit Test -HAudioUnitViewController",
+        @"GCD Test -GCDViewController",
+        @"文件上传 -HNetworkViewController",
+        @"单例释放 -HGCDViewController",
+        @"Memory（内存相关）-HMemoryViewController",
+        @"Lifecycle -HLifecycleViewController",
     ];
     return data;
 }
@@ -106,50 +86,12 @@ typedef NS_ENUM(NSInteger ,VCType) {
 
 -  (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    HHBaseViewController *vcController = nil;
-    switch (indexPath.row) {
-        case VCType_ViewTest:
-            vcController = [HViewViewController new];
-            break;
-        case VCType_VideoCapture:
-            vcController = [HVideoCaptureViewController new];
-            break;
-        case VCType_SortAlgor:
-            vcController = [HSortViewController new];
-            break;
-        case VCType_FileHandle:
-            vcController = [HFileViewController new];
-            break;
-        case VCType_OCWithCpp:
-            vcController = [HCPPViewController new];
-            break;
-        case VCType_CodeFuncTest:
-            vcController = [HCodeFuncViewController new];
-            break;
-        case VCType_DrawView:
-            vcController = [HDrawViewController new];
-            break;
-        case VCType_LayerTest:
-            vcController = [HLayerViewController new];
-            break;
-        case VCType_Block:
-            vcController = [HBlockViewController new];
-            break;
-        case VCType_AudioUnit:
-            vcController = [HAudioUnitViewController new];
-            break;
-        case VCType_GCD:
-            vcController = [GCDViewController new];
-            break;
-        case VCType_NetWork:
-            vcController = [HNetworkViewController new];
-            break;
-            
-        default:
-            break;
-    }
+    NSString *funString = self.datasource[indexPath.row];
+    NSString *funVC = [[funString componentsSeparatedByString:@"-"]lastObject];
+    Class cls = NSClassFromString(funVC);
+    id controller = [[cls alloc]init];
     
-    [self presentViewController:vcController animated:YES completion:^{
+    [self presentViewController:controller animated:YES completion:^{
         
     }];
 }

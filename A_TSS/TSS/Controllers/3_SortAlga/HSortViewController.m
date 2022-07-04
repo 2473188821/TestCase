@@ -8,7 +8,7 @@
 
 #import "HSortViewController.h"
 #import "RankObj.h"
-#import "Person.h"
+#import "LinkerPerson.h"
 
 @interface HSortViewController ()
 
